@@ -1,0 +1,19 @@
+{
+  "id": "cover-familiar-faces-dirty-business",
+  "path": "/covers/familiar-faces-dirty-business.webp",
+  "kind": "cover",
+  "width": 1200,
+  "height": 1920,
+  "alt": "Familiar Faces, Dirty Business cover by Wes Hamilton.",
+  "credit": null,
+  "rightsStatus": "pending",
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Web image exported from publisher-supplied TIFF Calder_City_Book_One_Amazon_KDP.tiff on 2026-10-17; original artwork preserved. Final rights approval pending."
+  },
+  "sourceIds": [
+    "asset-familiar-faces-dirty-business"
+  ]
+}

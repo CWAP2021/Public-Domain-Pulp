@@ -1,0 +1,22 @@
+import fs from 'node:fs';import path from 'node:path';
+const root=path.resolve('dist'),errors=[],pages=[];const walk=dir=>{for(const name of fs.readdirSync(dir)){const file=path.join(dir,name);if(fs.statSync(file).isDirectory())walk(file);else if(name.endsWith('.html')&&!file.includes(`${path.sep}admin${path.sep}`))pages.push(file);}};walk(root);
+const attrs=tag=>Object.fromEntries([...tag.matchAll(/([\w:-]+)\s*=\s*"([^"]*)"/g)].map(x=>[x[1],x[2].replaceAll('&amp;','&')]));const route=file=>'/'+path.relative(root,file).split(path.sep).join('/').replace(/index\.html$/,'');
+const resolve=url=>{let pathname;try{pathname=decodeURIComponent(new URL(url,'https://publicdomainpulp.net').pathname);}catch{return null;}let file=path.join(root,pathname);if(fs.existsSync(file)&&fs.statSync(file).isDirectory())file=path.join(file,'index.html');return file;};
+const titles=new Set();let internal=0,images=0,jsonld=0;
+for(const file of pages){const html=fs.readFileSync(file,'utf8'),url=route(file),fail=m=>errors.push(`${url}: ${m}`);
+ const title=html.match(/<title>([\s\S]*?)<\/title>/)?.[1];if(!title||titles.has(title))fail('Missing or duplicate title');titles.add(title);
+ if((html.match(/<h1(?:\s|>)/g)||[]).length!==1)fail('Expected exactly one page H1');
+ for(const field of ['description','robots'])if(![...html.matchAll(/<meta\b[^>]*>/g)].some(x=>attrs(x[0]).name===field&&attrs(x[0]).content))fail(`Missing ${field} meta`);
+ for(const field of ['og:title','og:description','og:image','og:url'])if(![...html.matchAll(/<meta\b[^>]*>/g)].some(x=>attrs(x[0]).property===field&&attrs(x[0]).content))fail(`Missing ${field}`);
+ for(const tag of html.matchAll(/<(?:a|img|script|link)\b[^>]*>/g)){const a=attrs(tag[0]);const value=a.href||a.src;if(tag[0].startsWith('<img')){images++;if(!('alt'in a))fail('Image missing alt');if(!a.width||!a.height)fail('Image missing dimensions');}if(!value||/^(https?:|mailto:|data:)/.test(value))continue;if(!value.startsWith('/')&&!value.startsWith('#'))continue;internal++;const parsed=new URL(value,new URL(url,'https://publicdomainpulp.net'));const target=resolve(parsed.href);if(!target||!fs.existsSync(target))fail(`Broken local target ${value}`);else if(parsed.hash&&target.endsWith('.html')){const id=decodeURIComponent(parsed.hash.slice(1));const targetHtml=fs.readFileSync(target,'utf8');if(!targetHtml.includes(`id="${id}"`))fail(`Broken fragment ${value}`);}}
+ for(const script of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)){if(attrs(script[1]).type==='application/ld+json'){jsonld++;try{JSON.parse(script[2]);}catch{fail('Invalid JSON-LD');}}}
+ if(/Public Enemy Number One|Dick Tracy: The Fugitive|\[VERIFY|\bTBD\b/.test(html))fail('Internal title or placeholder leaked');
+ if(!html.includes('Skip to content')||!html.includes('id="main"'))fail('Missing skip-navigation target');
+}
+const mbh=fs.readFileSync(path.join(root,'books/my-blue-heaven/index.html'),'utf8');for(const text of ['Betty Boop','Popeye','prequel to Twenty-Five Dollars a Night','B0HLN6C27N','B0HMFVZWCN','9798160818450','my-blue-heaven-spotify-qr.png'])if(!mbh.includes(text))errors.push(`Missing My Blue Heaven requirement: ${text}`);
+const contact=fs.readFileSync(path.join(root,'contact/index.html'),'utf8');for(const text of ['info@publicdomainpulp.net','type="email"','name="message"','Prepare email'])if(!contact.includes(text))errors.push(`Missing contact requirement: ${text}`);
+const home=fs.readFileSync(path.join(root,'index.html'),'utf8');if(!home.includes('publicdomainpulppress.substack.com/embed')||!home.includes('id="subscribe"'))errors.push('Homepage signup missing');
+const ss=fs.readFileSync(path.join(root,'series/the-sailor-and-the-showgirl/index.html'),'utf8');if(!ss.includes('Publication order:')||!ss.includes('Story chronology:'))errors.push('Separate reading/chronology sequence missing');
+const base=process.env.PDP_TEST_URL;
+if(base){for(const file of pages.filter(p=>!p.endsWith('404.html'))){const res=await fetch(new URL(route(file),base));if(res.status!==200)errors.push(`HTTP ${res.status}: ${route(file)}`);}const missing=await fetch(new URL('/a-page-that-does-not-exist/',base));if(missing.status!==404)errors.push('Unknown URL does not return 404');}
+if(errors.length){console.error(errors.join('\n'));process.exit(1);}const result={pages:pages.length,localReferences:internal,images,jsonld,status:'passed',httpChecked:!!base};fs.mkdirSync('artifacts',{recursive:true});fs.writeFileSync('artifacts/site-check.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));

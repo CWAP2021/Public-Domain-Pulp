@@ -1,0 +1,33 @@
+{
+  "id": "my-blue-heaven-paperback",
+  "bookId": "my-blue-heaven",
+  "format": "paperback",
+  "language": "en",
+  "publicationStatus": "available",
+  "publicationDate": "2026-10-15",
+  "retailerPublisherCredit": "Independently published",
+  "isbn13": "9798160818450",
+  "asin": "B0HMFVZWCN",
+  "pageCount": 260,
+  "links": [
+    {
+      "label": "Paperback on Amazon",
+      "url": "https://www.amazon.com/dp/B0HMFVZWCN",
+      "kind": "retailer",
+      "verification": "destination-verified",
+      "checkedOn": "2026-10-17",
+      "sourceIds": [
+        "paperback-mbh"
+      ]
+    }
+  ],
+  "approval": {
+    "state": "fact-checked",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Edition metadata and destination checked directly in browser on 17 October 2026. Recheck before launch."
+  },
+  "sourceIds": [
+    "paperback-mbh"
+  ]
+}

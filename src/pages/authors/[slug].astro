@@ -1,0 +1,6 @@
+---
+import Layout from '../../layouts/Layout.astro';import BookCard from '../../components/BookCard.astro';import Newsletter from '../../components/Newsletter.astro';import {authors,books} from '../../data/catalog';
+export function getStaticPaths(){return authors.map(author=>({params:{slug:author.slug},props:{author}}));}
+const {author}=Astro.props;const titles=books.filter(b=>b.contributors.some((c:any)=>c.authorId===author.id));
+---
+<Layout title={`${author.displayName} — Books`} description={`Explore books by ${author.displayName}, published by Public Domain Pulp.`}><header class="page-intro wrap"><p class="eyebrow">Books by</p><h1>{author.displayName}</h1>{author.bio&&<p>{author.bio}</p>}</header><section class="section wrap"><div class="book-grid">{titles.map(b=><BookCard book={b}/>)}</div></section><Newsletter/></Layout>

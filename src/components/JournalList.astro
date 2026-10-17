@@ -1,0 +1,4 @@
+---
+import {journal} from '../data/catalog';
+---
+<div class="journal-grid">{journal.map((post,i)=><article class="journal-card"><div class="journal-number" aria-hidden="true">0{i+1}</div><p class="eyebrow">{post.category}</p><h3><a href={post.url}>{post.title}</a></h3><p>{post.description}</p><div class="journal-bottom"><time datetime={post.date}>{post.label}</time><a href={post.url}>Read on Substack <span aria-hidden="true">↗</span></a></div></article>)}</div>

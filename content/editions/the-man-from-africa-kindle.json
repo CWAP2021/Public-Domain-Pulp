@@ -1,0 +1,33 @@
+{
+  "id": "the-man-from-africa-kindle",
+  "bookId": "the-man-from-africa",
+  "format": "kindle",
+  "language": "en",
+  "publicationStatus": "available",
+  "publicationDate": null,
+  "retailerPublisherCredit": null,
+  "isbn13": null,
+  "asin": "B0HJ6NQF2Q",
+  "pageCount": null,
+  "links": [
+    {
+      "label": "Kindle on Amazon",
+      "url": "https://www.amazon.com/dp/B0HJ6NQF2Q",
+      "kind": "retailer",
+      "verification": "destination-verified",
+      "checkedOn": "2026-10-17",
+      "sourceIds": [
+        "retailer-the-man-from-africa-kindle"
+      ]
+    }
+  ],
+  "approval": {
+    "state": "fact-checked",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Previously checked retailer link/status retained; no new publication date, price or ISBN inferred."
+  },
+  "sourceIds": [
+    "retailer-the-man-from-africa-kindle"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "the-night-has-rules-kindle",
+  "bookId": "the-night-has-rules",
+  "format": "kindle",
+  "language": "en",
+  "publicationStatus": "preorder",
+  "publicationDate": null,
+  "retailerPublisherCredit": null,
+  "isbn13": null,
+  "asin": "B0HLWQX1NS",
+  "pageCount": null,
+  "links": [
+    {
+      "label": "Preorder Kindle on Amazon",
+      "url": "https://www.amazon.com/dp/B0HLWQX1NS",
+      "kind": "retailer",
+      "verification": "destination-verified",
+      "checkedOn": "2026-10-17",
+      "sourceIds": [
+        "retailer-the-night-has-rules-kindle"
+      ]
+    }
+  ],
+  "approval": {
+    "state": "fact-checked",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Previously checked retailer link/status retained; no new publication date, price or ISBN inferred."
+  },
+  "sourceIds": [
+    "retailer-the-night-has-rules-kindle"
+  ]
+}

@@ -1,0 +1,18 @@
+import siteSettings from '../../content/settings/site.json';
+const values=(glob:Record<string,unknown>)=>Object.values(glob) as any[];
+export const sourceBooks=values(import.meta.glob('../../content/books/*.json',{eager:true,import:'default'}));
+export const authors=values(import.meta.glob('../../content/authors/*.json',{eager:true,import:'default'}));
+export const sourceSeries=values(import.meta.glob('../../content/series/*.json',{eager:true,import:'default'}));
+export const editions=values(import.meta.glob('../../content/editions/*.json',{eager:true,import:'default'}));
+export const assets=values(import.meta.glob('../../content/assets/*.json',{eager:true,import:'default'}));
+export const journal=values(import.meta.glob('../../content/journal/*.json',{eager:true,import:'default'})).sort((a,b)=>b.date.localeCompare(a.date));
+export const site=siteSettings;
+export const live=site.launchApproved && import.meta.env.PDP_PRODUCTION==='true';
+export const feedbackMode=import.meta.env.PDP_FORM_MODE==='netlify'?'netlify':'email';
+const byId=(items:any[],id:string)=>items.find(x=>x.id===id);
+export const series=sourceSeries.map((s,i)=>({...s,color:s.visualTheme||'navy',number:String(i+1).padStart(2,'0'),genre:s.genreLabels.join(' · '),cover:s.publicationOrder?.[0]||sourceBooks.find(b=>b.seriesMemberships.some((m:any)=>m.seriesId===s.id))?.id,author:[...new Set(sourceBooks.filter(b=>b.seriesMemberships.some((m:any)=>m.seriesId===s.id)).flatMap(b=>b.contributors.filter((c:any)=>c.role==='author').map((c:any)=>c.creditedAs)))].join(', ')}));
+export const books=sourceBooks.map(b=>{const m=b.seriesMemberships[0],own=editions.filter(e=>e.bookId===b.id),primary=own.find(e=>e.publicationStatus==='available')||own[0],cover=byId(assets,b.coverAssetId);return {...b,seriesId:m.seriesId,order:m.position,author:b.contributors.filter((c:any)=>c.role==='author').map((c:any)=>c.creditedAs).join(', '),genre:[...b.genres,...b.subgenres].join(' · '),hook:b.description.hook,paragraphs:b.description.paragraphs,cover:cover?.path,coverWidth:cover?.width,coverHeight:cover?.height,status:primary?.publicationStatus||'forthcoming',editions:own,links:own.flatMap(e=>e.links.filter((l:any)=>l.verification==='destination-verified').map((l:any)=>({...l,verified:true,format:e.format}))),qr:byId(assets,b.playlistQrAssetId)?.path};}).sort((a,b)=>a.seriesId.localeCompare(b.seriesId)||a.order-b.order);
+export type Book=typeof books[number];
+export const seriesFor=(id:string)=>byId(series,id);
+export const seriesBooks=(id:string)=>books.filter(b=>b.seriesMemberships.some((m:any)=>m.seriesId===id)).sort((a,b)=>a.order-b.order);
+export const statusLabel=(status:string)=>({available:'Available now',preorder:'Preorder',forthcoming:'Forthcoming','in-development':'In development',unavailable:'Currently unavailable'}[status]||status);

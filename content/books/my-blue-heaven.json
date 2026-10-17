@@ -1,0 +1,102 @@
+{
+  "id": "my-blue-heaven",
+  "slug": "my-blue-heaven",
+  "title": "My Blue Heaven",
+  "subtitle": null,
+  "contributors": [
+    {
+      "authorId": "samara-bellingham",
+      "role": "author",
+      "creditedAs": "Samara Bellingham"
+    }
+  ],
+  "seriesMemberships": [
+    {
+      "seriesId": "sailor-showgirl",
+      "position": 2,
+      "displayLabel": "Book Two",
+      "chronologicalPosition": 1
+    }
+  ],
+  "genres": [
+    "Romance",
+    "Noir"
+  ],
+  "subgenres": [
+    "Screwball comedy",
+    "Jukebox musical"
+  ],
+  "publicationStatus": "published",
+  "description": {
+    "hook": "Betty can hold a room. Holding on to a sailor is another matter.",
+    "paragraphs": [
+      "At the Meridian, the Long Beach nightclub everybody calls Bluto’s, Betty Boop is finding out what her voice can earn her. There are musicians to impress, wages to negotiate, and a stage she wants to make her own.",
+      "Popeye has ships to catch. He also has questions about Olive Oyl, who vanished from his life without an explanation. Loving Betty cannot make those questions disappear, any more than loving him can settle what Betty wants from her work.",
+      "Songs pass between them. Letters travel too slowly. Homecomings bring pleasures and arguments neither could have managed at a distance.",
+      "A prequel to Twenty-Five Dollars a Night, My Blue Heaven returns to the earlier days of their relationship in a musical waterfront romance about desire, ambition, and the practical business of making room for another person without giving up your own life."
+    ],
+    "approval": {
+      "state": "draft",
+      "approvedBy": null,
+      "approvedOn": null,
+      "notes": "Ari editorial draft imported verbatim from delivered package; publisher approval pending. Publisher naming correction, 17 October 2026: Betty Bupinski and Pop-Eye supersede earlier website naming. Latest publisher instruction: use Betty Boop and Popeye directly in website copy; supersedes the earlier Bupinski/Pop-Eye preference."
+    },
+    "sourceIds": [
+      "ari-book-copy",
+      "ari-source-notes"
+    ]
+  },
+  "coverAssetId": "cover-my-blue-heaven",
+  "excerpt": {
+    "label": "Read an excerpt on Substack — Chapter Four",
+    "url": "https://publicdomainpulppress.substack.com/p/a-first-look-at-my-blue-heaven",
+    "kind": "excerpt",
+    "verification": "destination-verified",
+    "checkedOn": "2026-10-17",
+    "sourceIds": [
+      "mbh-excerpt"
+    ]
+  },
+  "playlist": {
+    "label": "Listen on Spotify",
+    "url": "https://open.spotify.com/playlist/6RCjxSxzDtJNpj5rmsroVg?si=nDw-JdmERdyT6k4qclE96A",
+    "kind": "playlist",
+    "verification": "source-linked",
+    "checkedOn": "2026-10-17",
+    "sourceIds": [
+      "mbh-manuscript",
+      "publisher-spotify-link"
+    ]
+  },
+  "chronologyNote": "My Blue Heaven is the prequel to Twenty-Five Dollars a Night. It is Book Two in the series publication order.",
+  "seo": {
+    "title": "My Blue Heaven by Samara Bellingham | Public Domain Pulp",
+    "description": "A screwball noir romance with music woven through the story. Explore My Blue Heaven by Samara Bellingham, Book Two of The Sailor & the Showgirl.",
+    "canonicalPath": "/books/my-blue-heaven/",
+    "socialImageAssetId": null,
+    "indexable": false
+  },
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Ari replacement description pending publisher approval. Direct publisher instruction establishes prequel relationship; edition metadata, cover and playlist/QR retained."
+  },
+  "sourceIds": [
+    "master-brief",
+    "claude-copy",
+    "kindle-mbh",
+    "paperback-mbh",
+    "mbh-manuscript",
+    "ari-book-copy",
+    "ari-source-notes"
+  ],
+  "playlistQrAssetId": "my-blue-heaven-playlist-qr",
+  "catalogTeaser": "Betty Boop is learning to command a stage. Popeye keeps going back to sea. Between songs, letters, and homecomings, they begin discovering what a life together might require.",
+  "rightsReview": {
+    "status": "pending",
+    "notes": "Character/source versions, territories, release timing and marketing presentation remain for publisher/legal review. Naming decisions are editorial permissions, not legal clearance."
+  },
+  "prequelToBookId": "twenty-five-dollars-a-night",
+  "literaryIdentification": "A new musical romance featuring Popeye and Betty Boop."
+}

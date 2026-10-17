@@ -1,0 +1,77 @@
+{
+  "id": "catalina",
+  "slug": "catalina",
+  "title": "Catalina",
+  "subtitle": null,
+  "contributors": [
+    {
+      "authorId": "samara-bellingham",
+      "role": "author",
+      "creditedAs": "Samara Bellingham"
+    }
+  ],
+  "seriesMemberships": [
+    {
+      "seriesId": "sailor-showgirl",
+      "position": 3,
+      "displayLabel": "Book Three",
+      "chronologicalPosition": 3
+    }
+  ],
+  "genres": [
+    "Romance"
+  ],
+  "subgenres": [
+    "Historical romantic comedy"
+  ],
+  "publicationStatus": "forthcoming",
+  "coverAssetId": "cover-catalina",
+  "excerpt": null,
+  "playlist": null,
+  "playlistQrAssetId": null,
+  "chronologyNote": null,
+  "seo": {
+    "title": "Catalina by Samara Bellingham | Public Domain Pulp",
+    "description": "With Bluto’s nightclub closed after a fire, Betty Boop and Popeye sail for Catalina with Mabel and a charming gentleman of leisure. Dancing, romance, and an unexpected clue complicate the holiday.",
+    "canonicalPath": "/books/catalina/",
+    "socialImageAssetId": null,
+    "indexable": false
+  },
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Website record remains a draft. Retailer status retained from earlier directly inspected Amazon listings; not inferred from the new prose."
+  },
+  "sourceIds": [
+    "master-brief",
+    "ari-book-copy",
+    "ari-source-notes"
+  ],
+  "catalogTeaser": "With Bluto’s nightclub closed after a fire, Betty Boop and Popeye sail for Catalina with Mabel and a charming gentleman of leisure. Dancing, romance, and an unexpected clue complicate the holiday.",
+  "description": {
+    "hook": "Betty has had enough of waiting for the nightclub to reopen. Catalina has a ballroom.",
+    "paragraphs": [
+      "That seems an excellent beginning.",
+      "With the Meridian still closed after a fire, Betty Boop and Mabel are out of work and thoroughly tired of discussing it. A sailing holiday promises sunshine, good food, and a change of company. Popeye knows his way across the water. Hamish Gravlin—Ham, or “Gravy” when Betty feels like it—has the boat, the manners, and a remarkable ability to avoid ordinary employment.",
+      "On the island, Mabel finds someone worth dancing with, Betty finds fresh possibilities for mischief, and the Casino offers more than an evening’s entertainment. Then a photograph gives the search for Olive Oyl an unexpected direction.",
+      "A romantic island adventure full of affectionate comedy, theatrical opportunity, and people discovering how much their pleasures—and their loyalties—may cost."
+    ],
+    "approval": {
+      "state": "draft",
+      "approvedBy": null,
+      "approvedOn": null,
+      "notes": "Ari editorial draft imported verbatim from delivered package; publisher approval pending. Publisher naming correction, 17 October 2026: Betty Bupinski and Pop-Eye supersede earlier website naming. Latest publisher instruction: use Betty Boop and Popeye directly in website copy; supersedes the earlier Bupinski/Pop-Eye preference."
+    },
+    "sourceIds": [
+      "ari-book-copy",
+      "ari-source-notes"
+    ]
+  },
+  "rightsReview": {
+    "status": "pending",
+    "notes": "Character/source versions, territories, release timing and marketing presentation remain for publisher/legal review. Naming decisions are editorial permissions, not legal clearance."
+  },
+  "prequelToBookId": null,
+  "literaryIdentification": "A new island romantic adventure featuring Popeye and Betty Boop."
+}

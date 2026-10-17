@@ -1,0 +1,77 @@
+{
+  "id": "twenty-five-dollars-a-night",
+  "slug": "twenty-five-dollars-a-night",
+  "title": "Twenty-Five Dollars a Night",
+  "subtitle": null,
+  "contributors": [
+    {
+      "authorId": "samara-bellingham",
+      "role": "author",
+      "creditedAs": "Samara Bellingham"
+    }
+  ],
+  "seriesMemberships": [
+    {
+      "seriesId": "sailor-showgirl",
+      "position": 1,
+      "displayLabel": "Book One",
+      "chronologicalPosition": 2
+    }
+  ],
+  "genres": [
+    "Romance"
+  ],
+  "subgenres": [
+    "Crime · Comedy · Romance"
+  ],
+  "publicationStatus": "published",
+  "coverAssetId": "cover-twenty-five-dollars-a-night",
+  "excerpt": null,
+  "playlist": null,
+  "playlistQrAssetId": null,
+  "chronologyNote": null,
+  "seo": {
+    "title": "Twenty-Five Dollars a Night by Samara Bellingham | Public Domain Pulp",
+    "description": "Frank Bluto offers Betty Boop twenty-five dollars a night to listen. When she disappears and Mabel is beaten, Popeye comes ashore to find that easy money has become dangerous business.",
+    "canonicalPath": "/books/twenty-five-dollars-a-night/",
+    "socialImageAssetId": null,
+    "indexable": false
+  },
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Website record remains a draft. Retailer status retained from earlier directly inspected Amazon listings; not inferred from the new prose."
+  },
+  "sourceIds": [
+    "master-brief",
+    "ari-book-copy",
+    "ari-source-notes"
+  ],
+  "catalogTeaser": "Frank Bluto offers Betty Boop twenty-five dollars a night to listen. When she disappears and Mabel is beaten, Popeye comes ashore to find that easy money has become dangerous business.",
+  "description": {
+    "hook": "Twenty-five dollars a night. All Betty has to do is listen.",
+    "paragraphs": [
+      "Betty Boop knows how to get men talking. At Frank Bluto’s nightclub, that talent can sell champagne, win a better tip—or earn her money for overhearing conversations the men upstairs would rather keep private.",
+      "Betty has plans for herself, and being underestimated has always been useful. But when Popeye comes home with flowers, Betty is missing and her best friend Mabel has been beaten by men asking where she went.",
+      "Now a sailor with little patience for explanations has questions nobody wants to answer. Betty has information worth more than her wages. And the people who paid her to listen have very different ideas about what she should do with what she heard.",
+      "A waterfront crime adventure with a sharp comic tongue, a dangerous wire reel, and a showgirl determined to have a say in her own rescue."
+    ],
+    "approval": {
+      "state": "draft",
+      "approvedBy": null,
+      "approvedOn": null,
+      "notes": "Ari editorial draft imported verbatim from delivered package; publisher approval pending. Publisher naming correction, 17 October 2026: Betty Bupinski and Pop-Eye supersede earlier website naming. Latest publisher instruction: use Betty Boop and Popeye directly in website copy; supersedes the earlier Bupinski/Pop-Eye preference."
+    },
+    "sourceIds": [
+      "ari-book-copy",
+      "ari-source-notes"
+    ]
+  },
+  "rightsReview": {
+    "status": "pending",
+    "notes": "Character/source versions, territories, release timing and marketing presentation remain for publisher/legal review. Naming decisions are editorial permissions, not legal clearance."
+  },
+  "prequelToBookId": null,
+  "literaryIdentification": "A new romantic crime adventure featuring Popeye and Betty Boop."
+}

@@ -1,0 +1,4 @@
+---
+import Layout from '../../layouts/Layout.astro';import SeriesPanel from '../../components/SeriesPanel.astro';import Newsletter from '../../components/Newsletter.astro';import {series} from '../../data/catalog';
+---
+<Layout title="Our series" description="Discover The Sailor & the Showgirl, The Jane Chronicles, and Calder City from Public Domain Pulp."><header class="page-intro wrap"><p class="eyebrow">Our series</p><h1>Familiar faces.<br/><em>Uncharted territory.</em></h1><p>Three series. Different worlds. Stories with lives of their own.</p></header><section class="section wrap series-stack">{series.map(s=><SeriesPanel series={s}/>)}</section><Newsletter/></Layout>

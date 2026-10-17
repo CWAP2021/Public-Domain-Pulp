@@ -1,0 +1,49 @@
+---
+import '../styles/global.css';
+import '@fontsource/source-serif-4/latin-400.css';
+import '@fontsource/source-serif-4/latin-600.css';
+import '@fontsource/source-sans-3/latin-400.css';
+import '@fontsource/source-sans-3/latin-600.css';
+import {site,live} from '../data/catalog';
+const {title='New stories. Familiar characters.',description='Original genre fiction from Public Domain Pulp. Explore romantic adventures, time-travel romance, and noir mysteries.',image='/social/publisher.jpg',schema,type='website'}=Astro.props;
+const path=Astro.url.pathname;
+const canonical=new URL(path,site.url).href;
+const nav=[['Books','/books/'],['Series','/series/'],['About','/about/'],['Journal','/journal/'],['Community','/community/']];
+const active=(href:string)=>path.startsWith(href);
+---
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{title} | Public Domain Pulp</title><meta name="description" content={description}/>
+  <meta name="robots" content={live?'index,follow':'noindex,nofollow'}/><link rel="canonical" href={canonical}/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/><meta name="theme-color" content="#142331"/>
+  <meta property="og:type" content={type}/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:site_name" content={site.name}/><meta property="og:image" content={new URL(image,site.url).href}/><meta property="og:image:alt" content={title}/>
+  <meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={title}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={new URL(image,site.url).href}/>
+  <script type="application/ld+json" set:html={JSON.stringify(schema||{'@context':'https://schema.org','@type':'Organization',name:site.name,url:site.url,sameAs:[site.profile]}).replace(/</g,'\\u003c')}/>
+ </head>
+ <body>
+  <a class="skip" href="#main">Skip to content</a>
+  {!live&&<div class="preview-bar">Publisher preview <span>·</span> Prepared for editorial approval</div>}
+  <header class="site-header wrap">
+   <a class="wordmark" href="/" aria-label="Public Domain Pulp home"><span>PUBLIC DOMAIN</span><strong>PULP<span class="brand-dot">.</span></strong></a>
+   <a class="header-subscribe" href="/community/#subscribe">Subscribe</a>
+   <button class="menu-button" aria-controls="navigation" aria-expanded="false" hidden>Menu <span aria-hidden="true">☰</span></button>
+   <nav id="navigation" aria-label="Main navigation">{nav.map(([label,href])=><a href={href} aria-current={active(href)?'page':undefined}>{label}</a>)}<a class="button small" href="/community/#subscribe">Subscribe <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main"><slot/></main>
+  <footer class="site-footer"><div class="wrap footer-grid"><div><a class="footer-brand" href="/">PUBLIC DOMAIN PULP.</a><p>Respect the source.<br/>Respect the genre.<br/>Make something new.</p></div><nav aria-label="Footer navigation">{nav.map(([label,href])=><a href={href}>{label}</a>)}</nav><div><p class="eyebrow">Stay in the story</p><a class="footer-link" href={site.newsletter}>Public Domain Pulp on Substack ↗</a><p class="fine">Human-directed. AI-assisted.<br/><a href="/about/#process">How we make the books</a></p></div></div><div class="wrap footer-bottom"><span>© {new Date().getFullYear()} Public Domain Pulp</span><div><a href="/privacy/">Privacy</a><a href="/accessibility/">Accessibility</a><a href="/contact/">Contact</a></div></div></footer>
+  <script>
+   const menu=document.querySelector<HTMLButtonElement>('.menu-button');
+   const nav=document.querySelector<HTMLElement>('#navigation');
+   if(menu&&nav){
+    document.documentElement.classList.add('js');menu.hidden=false;
+    const close=()=>{menu.setAttribute('aria-expanded','false');nav.classList.remove('open');};
+    menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')==='true';menu.setAttribute('aria-expanded',String(!open));nav.classList.toggle('open',!open);});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.getAttribute('aria-expanded')==='true'){close();menu.focus();}});
+    nav.addEventListener('click',e=>{if((e.target as Element).closest('a'))close();});
+    matchMedia('(min-width: 960px)').addEventListener('change',close);
+   }
+  </script>
+ </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "Public Domain Pulp",
+  "url": "https://publicdomainpulp.net",
+  "newsletter": "https://substack.com/@publicdomainpulppress",
+  "newsletterEmbed": "https://publicdomainpulppress.substack.com/embed",
+  "profile": "https://substack.com/@publicdomainpulppress",
+  "manifesto": "https://publicdomainpulppress.substack.com/p/manifesto-the-public-domain-is-not",
+  "featured": "my-blue-heaven",
+  "launchApproved": false,
+  "contactEmail": "info@publicdomainpulp.net",
+  "editorialApproved": false,
+  "rightsApproved": false,
+  "privacyApproved": false
+}

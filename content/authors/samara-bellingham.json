@@ -1,0 +1,19 @@
+{
+  "id": "samara-bellingham",
+  "displayName": "Samara Bellingham",
+  "isPenName": true,
+  "slug": "samara-bellingham",
+  "bio": null,
+  "photoAssetId": null,
+  "approval": {
+    "state": "fact-checked",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Byline verified. No biography or legal identity inferred. Pen-name classification supplied by editorial package."
+  },
+  "sourceIds": [
+    "claude-copy",
+    "kindle-mbh",
+    "paperback-mbh"
+  ]
+}

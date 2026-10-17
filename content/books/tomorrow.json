@@ -1,0 +1,78 @@
+{
+  "id": "tomorrow",
+  "slug": "tomorrow",
+  "title": "Tomorrow",
+  "subtitle": null,
+  "contributors": [
+    {
+      "authorId": "samara-bellingham",
+      "role": "author",
+      "creditedAs": "Samara Bellingham"
+    }
+  ],
+  "seriesMemberships": [
+    {
+      "seriesId": "jane-chronicles",
+      "position": 1,
+      "displayLabel": "Book One",
+      "chronologicalPosition": null
+    }
+  ],
+  "genres": [
+    "Romance"
+  ],
+  "subgenres": [
+    "Time-travel romance"
+  ],
+  "publicationStatus": "published",
+  "coverAssetId": "cover-tomorrow",
+  "excerpt": null,
+  "playlist": null,
+  "playlistQrAssetId": null,
+  "chronologyNote": null,
+  "seo": {
+    "title": "Tomorrow by Samara Bellingham | Public Domain Pulp",
+    "description": "Jane Porter chooses Africa. An impossible accident delivers her to Baltimore six centuries later, where Tarzan is remembered and her own future is still hers to invent.",
+    "canonicalPath": "/books/tomorrow/",
+    "socialImageAssetId": null,
+    "indexable": false
+  },
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Website record remains a draft. Retailer status retained from earlier directly inspected Amazon listings; not inferred from the new prose."
+  },
+  "sourceIds": [
+    "master-brief",
+    "ari-book-copy",
+    "ari-source-notes"
+  ],
+  "catalogTeaser": "Jane Porter chooses Africa. An impossible accident delivers her to Baltimore six centuries later, where Tarzan is remembered and her own future is still hers to invent.",
+  "description": {
+    "hook": "Jane Porter has decided to stay in Africa. Six centuries have other plans.",
+    "paragraphs": [
+      "In 1913, Jane is ready to build a life she has chosen for herself. She has loved Tarzan and left him. She has work she wants to do, languages to learn, and a father who will have to get used to her decision.",
+      "Then a violent anomaly tears her out of that life.",
+      "Jane wakes in a Baltimore transformed beyond recognition. Its technology can do things she scarcely knows how to ask for. Its records have already assigned her a place in history. And the people interested in her arrival have reasons of their own for helping her understand it.",
+      "There is work here, too. Friendship. The possibility of love. There may even be a way home.",
+      "But Jane has learned how easily a woman’s life can become part of somebody else’s plans. The future will have to make room for hers."
+    ],
+    "approval": {
+      "state": "draft",
+      "approvedBy": null,
+      "approvedOn": null,
+      "notes": "Ari editorial draft imported verbatim from delivered package; publisher approval pending."
+    },
+    "sourceIds": [
+      "ari-book-copy",
+      "ari-source-notes"
+    ]
+  },
+  "rightsReview": {
+    "status": "pending",
+    "notes": "Character/source versions, territories, release timing and marketing presentation remain for publisher/legal review. Naming decisions are editorial permissions, not legal clearance."
+  },
+  "prequelToBookId": null,
+  "literaryIdentification": "A speculative romantic adventure reimagining Jane Porter and the world of Edgar Rice Burroughs’s Tarzan stories."
+}

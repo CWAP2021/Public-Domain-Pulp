@@ -1,0 +1,19 @@
+{
+  "id": "my-blue-heaven-playlist-qr",
+  "path": "/music/my-blue-heaven-spotify-qr.png",
+  "kind": "qr-code",
+  "width": 900,
+  "height": 900,
+  "alt": "QR code for the My Blue Heaven companion Spotify playlist.",
+  "credit": null,
+  "rightsStatus": "publisher-cleared",
+  "approval": {
+    "state": "publisher-approved",
+    "approvedBy": "Publisher, direct instruction in chat",
+    "approvedOn": "2026-10-17",
+    "notes": "Supplied unchanged for inclusion in the playlist section. No QR payload verification claim."
+  },
+  "sourceIds": [
+    "publisher-spotify-qr"
+  ]
+}

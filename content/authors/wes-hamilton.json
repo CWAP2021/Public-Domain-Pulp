@@ -1,0 +1,18 @@
+{
+  "id": "wes-hamilton",
+  "displayName": "Wes Hamilton",
+  "isPenName": true,
+  "slug": "wes-hamilton",
+  "bio": null,
+  "photoAssetId": null,
+  "approval": {
+    "state": "fact-checked",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Calder City byline supplied in brief/copy package; biography not supplied."
+  },
+  "sourceIds": [
+    "claude-copy",
+    "master-brief"
+  ]
+}

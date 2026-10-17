@@ -1,0 +1,77 @@
+{
+  "id": "a-wilder-tomorrow",
+  "slug": "a-wilder-tomorrow",
+  "title": "A Wilder Tomorrow",
+  "subtitle": null,
+  "contributors": [
+    {
+      "authorId": "samara-bellingham",
+      "role": "author",
+      "creditedAs": "Samara Bellingham"
+    }
+  ],
+  "seriesMemberships": [
+    {
+      "seriesId": "jane-chronicles",
+      "position": 3,
+      "displayLabel": "Book Three",
+      "chronologicalPosition": null
+    }
+  ],
+  "genres": [
+    "Romance"
+  ],
+  "subgenres": [
+    "Time-travel romance"
+  ],
+  "publicationStatus": "forthcoming",
+  "coverAssetId": "cover-a-wilder-tomorrow",
+  "excerpt": null,
+  "playlist": null,
+  "playlistQrAssetId": null,
+  "chronologyNote": null,
+  "seo": {
+    "title": "A Wilder Tomorrow by Samara Bellingham | Public Domain Pulp",
+    "description": "Settlements thrive where Baltimore’s maps say nobody lives. As Tarzan becomes a political symbol, Jane Porter faces a widening struggle over who gets to shape the future.",
+    "canonicalPath": "/books/a-wilder-tomorrow/",
+    "socialImageAssetId": null,
+    "indexable": false
+  },
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Website record remains a draft. Retailer status retained from earlier directly inspected Amazon listings; not inferred from the new prose."
+  },
+  "sourceIds": [
+    "master-brief",
+    "ari-book-copy",
+    "ari-source-notes"
+  ],
+  "catalogTeaser": "Settlements thrive where Baltimore’s maps say nobody lives. As Tarzan becomes a political symbol, Jane Porter faces a widening struggle over who gets to shape the future.",
+  "description": {
+    "hook": "The future has people its maps cannot account for. Jane Porter intends to meet them.",
+    "paragraphs": [
+      "Beyond Baltimore’s carefully managed districts, settlements are finding ways to live that the city never planned. Jane’s work brings her into contact with communities whose needs cannot be settled by changing their classification on a screen.",
+      "Inside the city, Tarzan’s growing influence is becoming something he never agreed to lead. His name travels farther than his explanations, and people with very different intentions are learning how useful it can be.",
+      "Jane has a child to prepare for, two extraordinary men in her life, and responsibilities that reach beyond either relationship. As political pressure grows, the freedom she has fought for must survive decisions with consequences for people far beyond herself.",
+      "The concluding volume of The Jane Chronicles carries Jane into a larger, more dangerous world—and asks what it takes to make a future she can live in."
+    ],
+    "approval": {
+      "state": "draft",
+      "approvedBy": null,
+      "approvedOn": null,
+      "notes": "Ari editorial draft imported verbatim from delivered package; publisher approval pending."
+    },
+    "sourceIds": [
+      "ari-book-copy",
+      "ari-source-notes"
+    ]
+  },
+  "rightsReview": {
+    "status": "pending",
+    "notes": "Character/source versions, territories, release timing and marketing presentation remain for publisher/legal review. Naming decisions are editorial permissions, not legal clearance."
+  },
+  "prequelToBookId": null,
+  "literaryIdentification": "A speculative romantic adventure continuing this reinterpretation of Jane Porter and Tarzan."
+}

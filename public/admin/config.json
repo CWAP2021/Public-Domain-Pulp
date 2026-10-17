@@ -1,0 +1,1365 @@
+{
+  "local_backend": true,
+  "backend": {
+    "name": "git-gateway"
+  },
+  "media_folder": "public/uploads",
+  "public_folder": "/uploads",
+  "collections": [
+    {
+      "name": "books",
+      "label": "Books",
+      "preview_path": "books/{{slug}}/",
+      "folder": "content/books",
+      "create": true,
+      "extension": "json",
+      "format": "json",
+      "identifier_field": "id",
+      "slug": "{{id}}",
+      "summary": "{{title}}",
+      "fields": [
+        {
+          "name": "id",
+          "label": "Stable ID (keep after first save)",
+          "required": true,
+          "widget": "string"
+        },
+        {
+          "name": "slug",
+          "label": "Page address slug",
+          "required": true,
+          "widget": "string"
+        },
+        {
+          "name": "title",
+          "label": "Title",
+          "required": true,
+          "widget": "string"
+        },
+        {
+          "name": "subtitle",
+          "label": "Subtitle",
+          "required": false,
+          "widget": "string"
+        },
+        {
+          "name": "contributors",
+          "label": "Contributors",
+          "required": true,
+          "widget": "list",
+          "fields": [
+            {
+              "name": "authorId",
+              "label": "Author Id",
+              "required": true,
+              "widget": "relation",
+              "collection": "authors",
+              "search_fields": [
+                "displayName",
+                "id"
+              ],
+              "display_fields": [
+                "displayName"
+              ],
+              "value_field": "id"
+            },
+            {
+              "name": "role",
+              "label": "Role",
+              "required": true,
+              "widget": "select",
+              "options": [
+                "author",
+                "editor",
+                "translator",
+                "illustrator"
+              ]
+            },
+            {
+              "name": "creditedAs",
+              "label": "Credited As",
+              "required": true,
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "seriesMemberships",
+          "label": "Series Memberships",
+          "required": true,
+          "widget": "list",
+          "fields": [
+            {
+              "name": "seriesId",
+              "label": "Series Id",
+              "required": true,
+              "widget": "relation",
+              "collection": "series",
+              "search_fields": [
+                "name",
+                "id"
+              ],
+              "display_fields": [
+                "name"
+              ],
+              "value_field": "id"
+            },
+            {
+              "name": "position",
+              "label": "Publication / series position",
+              "required": false,
+              "widget": "number",
+              "value_type": "int",
+              "min": 1
+            },
+            {
+              "name": "displayLabel",
+              "label": "Display Label",
+              "required": false,
+              "widget": "string"
+            },
+            {
+              "name": "chronologicalPosition",
+              "label": "Story chronology position",
+              "required": false,
+              "widget": "number",
+              "value_type": "int",
+              "min": 1
+            }
+          ]
+        },
+        {
+          "name": "genres",
+          "label": "Genres",
+          "required": true,
+          "widget": "list",
+          "field": {
+            "name": "item",
+            "label": "Item",
+            "widget": "string"
+          }
+        },
+        {
+          "name": "subgenres",
+          "label": "Subgenres",
+          "required": true,
+          "widget": "list",
+          "field": {
+            "name": "item",
+            "label": "Item",
+            "widget": "string"
+          }
+        },
+        {
+          "name": "publicationStatus",
+          "label": "Publication status",
+          "required": true,
+          "widget": "select",
+          "options": [
+            "published",
+            "forthcoming",
+            "in-development",
+            "withdrawn"
+          ]
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "required": true,
+          "widget": "object",
+          "fields": [
+            {
+              "name": "hook",
+              "label": "Hook",
+              "required": true,
+              "widget": "text"
+            },
+            {
+              "name": "paragraphs",
+              "label": "Paragraphs",
+              "required": true,
+              "widget": "list",
+              "field": {
+                "name": "item",
+                "label": "Item",
+                "widget": "text"
+              }
+            },
+            {
+              "name": "approval",
+              "label": "Approval",
+              "required": true,
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "state",
+                  "label": "State",
+                  "required": true,
+                  "widget": "select",
+                  "options": [
+                    "draft",
+                    "fact-checked",
+                    "publisher-approved",
+                    "published",
+                    "archived"
+                  ]
+                },
+                {
+                  "name": "approvedBy",
+                  "label": "Approved By",
+                  "required": false,
+                  "widget": "string"
+                },
+                {
+                  "name": "approvedOn",
+                  "label": "Approved On",
+                  "required": false,
+                  "widget": "datetime",
+                  "format": "YYYY-MM-DD",
+                  "date_format": "YYYY-MM-DD",
+                  "time_format": false
+                },
+                {
+                  "name": "notes",
+                  "label": "Notes",
+                  "required": true,
+                  "widget": "text"
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "sourceIds",
+              "widget": "hidden",
+              "default": []
+            }
+          ],
+          "collapsed": false
+        },
+        {
+          "name": "coverAssetId",
+          "label": "Cover image",
+          "required": false,
+          "widget": "relation",
+          "collection": "assets",
+          "search_fields": [
+            "id",
+            "id"
+          ],
+          "display_fields": [
+            "id"
+          ],
+          "value_field": "id"
+        },
+        {
+          "name": "excerpt",
+          "label": "Excerpt",
+          "required": true,
+          "widget": "object",
+          "fields": [
+            {
+              "name": "label",
+              "label": "Label",
+              "required": true,
+              "widget": "string"
+            },
+            {
+              "name": "url",
+              "label": "Url",
+              "required": true,
+              "widget": "string"
+            },
+            {
+              "name": "kind",
+              "label": "Kind",
+              "required": true,
+              "widget": "select",
+              "options": [
+                "retailer",
+                "excerpt",
+                "playlist",
+                "newsletter",
+                "manifesto"
+              ]
+            },
+            {
+              "name": "verification",
+              "label": "Verification",
+              "required": true,
+              "widget": "select",
+              "options": [
+                "unverified",
+                "source-linked",
+                "destination-verified"
+              ]
+            },
+            {
+              "name": "checkedOn",
+              "label": "Checked On",
+              "required": false,
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false
+            },
+            {
+              "name": "sourceIds",
+              "widget": "hidden",
+              "default": []
+            }
+          ],
+          "collapsed": false
+        },
+        {
+          "name": "playlist",
+          "label": "Playlist",
+          "required": true,
+          "widget": "object",
+          "fields": [
+            {
+              "name": "label",
+              "label": "Label",
+              "required": true,
+              "widget": "string"
+            },
+            {
+              "name": "url",
+              "label": "Url",
+              "required": true,
+              "widget": "string"
+            },
+            {
+              "name": "kind",
+              "label": "Kind",
+              "required": true,
+              "widget": "select",
+              "options": [
+                "retailer",
+                "excerpt",
+                "playlist",
+                "newsletter",
+                "manifesto"
+              ]
+            },
+            {
+              "name": "verification",
+              "label": "Verification",
+              "required": true,
+              "widget": "select",
+              "options": [
+                "unverified",
+                "source-linked",
+                "destination-verified"
+              ]
+            },
+            {
+              "name": "checkedOn",
+              "label": "Checked On",
+              "required": false,
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false
+            },
+            {
+              "name": "sourceIds",
+              "widget": "hidden",
+              "default": []
+            }
+          ],
+          "collapsed": false
+        },
+        {
+          "name": "chronologyNote",
+          "label": "Chronology Note",
+          "required": false,
+          "widget": "string"
+        },
+        {
+          "name": "seo",
+          "label": "Seo",
+          "required": true,
+          "widget": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "Title",
+              "required": true,
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Description",
+              "required": true,
+              "widget": "text"
+            },
+            {
+              "name": "canonicalPath",
+              "label": "Canonical Path",
+              "required": true,
+              "widget": "string"
+            },
+            {
+              "name": "socialImageAssetId",
+              "label": "Social Image Asset Id",
+              "required": false,
+              "widget": "relation",
+              "collection": "assets",
+              "search_fields": [
+                "id",
+                "id"
+              ],
+              "display_fields": [
+                "id"
+              ],
+              "value_field": "id"
+            },
+            {
+              "name": "indexable",
+              "label": "Indexable",
+              "required": true,
+              "widget": "boolean"
+            }
+          ],
+          "collapsed": true
+        },
+        {
+          "name": "approval",
+          "label": "Approval",
+          "required": true,
+          "widget": "object",
+          "fields": [
+            {
+              "name": "state",
+              "label": "State",
+              "required": true,
+              "widget": "select",
+              "options": [
+                "draft",
+                "fact-checked",
+                "publisher-approved",
+                "published",
+                "archived"
+              ]
+            },
+            {
+              "name": "approvedBy",
+              "label": "Approved By",
+              "required": false,
+              "widget": "string"
+            },
+            {
+              "name": "approvedOn",
+              "label": "Approved On",
+              "required": false,
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false
+            },
+            {
+              "name": "notes",
+              "label": "Notes",
+              "required": true,
+              "widget": "text"
+            }
+          ],
+          "collapsed": true
+        },
+        {
+          "name": "sourceIds",
+          "widget": "hidden",
+          "default": []
+        },
+        {
+          "name": "playlistQrAssetId",
+          "label": "Playlist QR image",
+          "required": false,
+          "widget": "relation",
+          "collection": "assets",
+          "search_fields": [
+            "id",
+            "id"
+          ],
+          "display_fields": [
+            "id"
+          ],
+          "value_field": "id"
+        },
+        {
+          "name": "catalogTeaser",
+          "label": "Catalog description",
+          "required": true,
+          "widget": "text"
+        },
+        {
+          "name": "prequelToBookId",
+          "label": "Prequel to book",
+          "required": false,
+          "widget": "relation",
+          "collection": "books",
+          "search_fields": [
+            "title",
+            "id"
+          ],
+          "display_fields": [
+            "title"
+          ],
+          "value_field": "id"
+        },
+        {
+          "name": "rightsReview",
+          "label": "Rights Review",
+          "required": true,
+          "widget": "object",
+          "fields": [
+            {
+              "name": "status",
+              "label": "Status",
+              "required": true,
+              "widget": "select",
+              "options": [
+                "pending",
+                "publisher-cleared"
+              ]
+            },
+            {
+              "name": "notes",
+              "label": "Notes",
+              "required": true,
+              "widget": "text"
+            }
+          ],
+          "collapsed": true
+        },
+        {
+          "name": "literaryIdentification",
+          "label": "Character / literary identification",
+          "required": false,
+          "widget": "string"
+        }
+      ]
+    },
+    {
+      "name": "lines",
+      "label": "Publishing lines",
+      "preview_path": "",
+      "folder": "content/lines",
+      "create": true,
+      "extension": "json",
+      "format": "json",
+      "identifier_field": "id",
+      "slug": "{{id}}",
+      "summary": "{{name}}",
+      "fields": [
+        {
+          "name": "id",
+          "label": "Stable ID (keep after first save)",
+          "required": true,
+          "widget": "string"
+        },
+        {
+          "name": "name",
+          "label": "Name",
+          "required": true,
+          "widget": "string"
+        },
+        {
+          "name": "slug",
+          "label": "Page address slug",
+          "required": true,
+          "widget": "string"
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "required": false,
+          "widget": "text"
+        },
+        {
+          "name": "approval",
+          "label": "Approval",
+          "required": true,
+          "widget": "object",
+          "fields": [
+            {
+              "name": "state",
+              "label": "State",
+              "required": true,
+              "widget": "select",
+              "options": [
+                "draft",
+                "fact-checked",
+                "publisher-approved",
+                "published",
+                "archived"
+              ]
+            },
+            {
+              "name": "approvedBy",
+              "label": "Approved By",
+              "required": false,
+              "widget": "string"
+            },
+            {
+              "name": "approvedOn",
+              "label": "Approved On",
+              "required": false,
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false
+            },
+            {
+              "name": "notes",
+              "label": "Notes",
+              "required": true,
+              "widget": "text"
+            }
+          ],
+          "collapsed": true
+        }
+      ]
+    },
+    {
+      "name": "series",
+      "label": "Series",
+      "preview_path": "",
+      "folder": "content/series",
+      "create": true,
+      "extension": "json",
+      "format": "json",
+      "identifier_field": "id",
+      "slug": "{{id}}",
+      "summary": "{{name}}",
+      "fields": [
+        {
+          "name": "id",
+          "label": "Stable ID (keep after first save)",
+          "required": true,
+          "widget": "string"
+        },
+        {
+          "name": "name",
+          "label": "Name",
+          "required": true,
+          "widget": "string"
+        },
+        {
+          "name": "aliases",
+          "label": "Aliases",
+          "required": true,
+          "widget": "list",
+          "field": {
+            "name": "item",
+            "label": "Item",
+            "widget": "string"
+          }
+        },
+        {
+          "name": "slug",
+          "label": "Page address slug",
+          "required": true,
+          "widget": "string"
+        },
+        {
+          "name": "publishingLineId",
+          "label": "Publishing Line Id",
+          "required": false,
+          "widget": "relation",
+          "collection": "lines",
+          "search_fields": [
+            "name",
+            "id"
+          ],
+          "display_fields": [
+            "name"
+          ],
+          "value_field": "id"
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "required": false,
+          "widget": "text"
+        },
+        {
+          "name": "genreLabels",
+          "label": "Genre Labels",
+          "required": true,
+          "widget": "list",
+          "field": {
+            "name": "item",
+            "label": "Item",
+            "widget": "string"
+          }
+        },
+        {
+          "name": "recommendedStartingBookId",
+          "label": "Recommended Starting Book Id",
+          "required": false,
+          "widget": "relation",
+          "collection": "books",
+          "search_fields": [
+            "title",
+            "id"
+          ],
+          "display_fields": [
+            "title"
+          ],
+          "value_field": "id"
+        },
+        {
+          "name": "approval",
+          "label": "Approval",
+          "required": true,
+          "widget": "object",
+          "fields": [
+            {
+              "name": "state",
+              "label": "State",
+              "required": true,
+              "widget": "select",
+              "options": [
+                "draft",
+                "fact-checked",
+                "publisher-approved",
+                "published",
+                "archived"
+              ]
+            },
+            {
+              "name": "approvedBy",
+              "label": "Approved By",
+              "required": false,
+              "widget": "string"
+            },
+            {
+              "name": "approvedOn",
+              "label": "Approved On",
+              "required": false,
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false
+            },
+            {
+              "name": "notes",
+              "label": "Notes",
+              "required": true,
+              "widget": "text"
+            }
+          ],
+          "collapsed": true
+        },
+        {
+          "name": "sourceIds",
+          "widget": "hidden",
+          "default": []
+        },
+        {
+          "name": "publicationOrder",
+          "label": "Publication Order",
+          "required": false,
+          "widget": "relation",
+          "collection": "books",
+          "multiple": true,
+          "search_fields": [
+            "title",
+            "id"
+          ],
+          "display_fields": [
+            "title"
+          ],
+          "value_field": "id"
+        },
+        {
+          "name": "storyChronology",
+          "label": "Story Chronology",
+          "required": false,
+          "widget": "relation",
+          "collection": "books",
+          "multiple": true,
+          "search_fields": [
+            "title",
+            "id"
+          ],
+          "display_fields": [
+            "title"
+          ],
+          "value_field": "id"
+        },
+        {
+          "name": "visualTheme",
+          "label": "Visual Theme",
+          "required": true,
+          "widget": "select",
+          "options": [
+            "navy",
+            "forest",
+            "rust"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "authors",
+      "label": "Authors / pen names",
+      "preview_path": "",
+      "folder": "content/authors",
+      "create": true,
+      "extension": "json",
+      "format": "json",
+      "identifier_field": "id",
+      "slug": "{{id}}",
+      "summary": "{{displayName}}",
+      "fields": [
+        {
+          "name": "id",
+          "label": "Stable ID (keep after first save)",
+          "required": true,
+          "widget": "string"
+        },
+        {
+          "name": "displayName",
+          "label": "Display Name",
+          "required": true,
+          "widget": "string"
+        },
+        {
+          "name": "isPenName",
+          "label": "Is Pen Name",
+          "required": false,
+          "widget": "boolean"
+        },
+        {
+          "name": "slug",
+          "label": "Page address slug",
+          "required": true,
+          "widget": "string"
+        },
+        {
+          "name": "bio",
+          "label": "Bio",
+          "required": false,
+          "widget": "text"
+        },
+        {
+          "name": "photoAssetId",
+          "label": "Photo Asset Id",
+          "required": false,
+          "widget": "relation",
+          "collection": "assets",
+          "search_fields": [
+            "id",
+            "id"
+          ],
+          "display_fields": [
+            "id"
+          ],
+          "value_field": "id"
+        },
+        {
+          "name": "approval",
+          "label": "Approval",
+          "required": true,
+          "widget": "object",
+          "fields": [
+            {
+              "name": "state",
+              "label": "State",
+              "required": true,
+              "widget": "select",
+              "options": [
+                "draft",
+                "fact-checked",
+                "publisher-approved",
+                "published",
+                "archived"
+              ]
+            },
+            {
+              "name": "approvedBy",
+              "label": "Approved By",
+              "required": false,
+              "widget": "string"
+            },
+            {
+              "name": "approvedOn",
+              "label": "Approved On",
+              "required": false,
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false
+            },
+            {
+              "name": "notes",
+              "label": "Notes",
+              "required": true,
+              "widget": "text"
+            }
+          ],
+          "collapsed": true
+        },
+        {
+          "name": "sourceIds",
+          "widget": "hidden",
+          "default": []
+        }
+      ]
+    },
+    {
+      "name": "editions",
+      "label": "Editions and retailer links",
+      "preview_path": "",
+      "folder": "content/editions",
+      "create": true,
+      "extension": "json",
+      "format": "json",
+      "identifier_field": "id",
+      "slug": "{{id}}",
+      "summary": "{{id}}",
+      "fields": [
+        {
+          "name": "id",
+          "label": "Stable ID (keep after first save)",
+          "required": true,
+          "widget": "string"
+        },
+        {
+          "name": "bookId",
+          "label": "Book Id",
+          "required": true,
+          "widget": "relation",
+          "collection": "books",
+          "search_fields": [
+            "title",
+            "id"
+          ],
+          "display_fields": [
+            "title"
+          ],
+          "value_field": "id"
+        },
+        {
+          "name": "format",
+          "label": "Format",
+          "required": true,
+          "widget": "select",
+          "options": [
+            "kindle",
+            "paperback",
+            "hardback",
+            "epub",
+            "audiobook"
+          ]
+        },
+        {
+          "name": "language",
+          "label": "Language",
+          "required": true,
+          "widget": "string"
+        },
+        {
+          "name": "publicationStatus",
+          "label": "Publication status",
+          "required": true,
+          "widget": "select",
+          "options": [
+            "available",
+            "preorder",
+            "unavailable"
+          ]
+        },
+        {
+          "name": "publicationDate",
+          "label": "Publication Date",
+          "required": false,
+          "widget": "datetime",
+          "format": "YYYY-MM-DD",
+          "date_format": "YYYY-MM-DD",
+          "time_format": false
+        },
+        {
+          "name": "retailerPublisherCredit",
+          "label": "Retailer Publisher Credit",
+          "required": false,
+          "widget": "string"
+        },
+        {
+          "name": "isbn13",
+          "label": "ISBN-13",
+          "required": false,
+          "widget": "string"
+        },
+        {
+          "name": "asin",
+          "label": "Amazon ASIN",
+          "required": false,
+          "widget": "string"
+        },
+        {
+          "name": "pageCount",
+          "label": "Pages (edition-specific)",
+          "required": false,
+          "widget": "number",
+          "value_type": "int",
+          "min": 1
+        },
+        {
+          "name": "links",
+          "label": "Links",
+          "required": true,
+          "widget": "list",
+          "fields": [
+            {
+              "name": "label",
+              "label": "Label",
+              "required": true,
+              "widget": "string"
+            },
+            {
+              "name": "url",
+              "label": "Url",
+              "required": true,
+              "widget": "string"
+            },
+            {
+              "name": "kind",
+              "label": "Kind",
+              "required": true,
+              "widget": "select",
+              "options": [
+                "retailer",
+                "excerpt",
+                "playlist",
+                "newsletter",
+                "manifesto"
+              ]
+            },
+            {
+              "name": "verification",
+              "label": "Verification",
+              "required": true,
+              "widget": "select",
+              "options": [
+                "unverified",
+                "source-linked",
+                "destination-verified"
+              ]
+            },
+            {
+              "name": "checkedOn",
+              "label": "Checked On",
+              "required": false,
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false
+            },
+            {
+              "name": "sourceIds",
+              "widget": "hidden",
+              "default": []
+            }
+          ]
+        },
+        {
+          "name": "approval",
+          "label": "Approval",
+          "required": true,
+          "widget": "object",
+          "fields": [
+            {
+              "name": "state",
+              "label": "State",
+              "required": true,
+              "widget": "select",
+              "options": [
+                "draft",
+                "fact-checked",
+                "publisher-approved",
+                "published",
+                "archived"
+              ]
+            },
+            {
+              "name": "approvedBy",
+              "label": "Approved By",
+              "required": false,
+              "widget": "string"
+            },
+            {
+              "name": "approvedOn",
+              "label": "Approved On",
+              "required": false,
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false
+            },
+            {
+              "name": "notes",
+              "label": "Notes",
+              "required": true,
+              "widget": "text"
+            }
+          ],
+          "collapsed": true
+        },
+        {
+          "name": "sourceIds",
+          "widget": "hidden",
+          "default": []
+        }
+      ]
+    },
+    {
+      "name": "assets",
+      "label": "Images",
+      "preview_path": "",
+      "folder": "content/assets",
+      "create": true,
+      "extension": "json",
+      "format": "json",
+      "identifier_field": "id",
+      "slug": "{{id}}",
+      "summary": "{{id}}",
+      "fields": [
+        {
+          "name": "id",
+          "label": "Stable ID (keep after first save)",
+          "required": true,
+          "widget": "string"
+        },
+        {
+          "name": "path",
+          "label": "Path",
+          "required": true,
+          "widget": "image"
+        },
+        {
+          "name": "kind",
+          "label": "Kind",
+          "required": true,
+          "widget": "select",
+          "options": [
+            "cover",
+            "photo",
+            "logo",
+            "social-image",
+            "qr-code"
+          ]
+        },
+        {
+          "name": "width",
+          "label": "Width",
+          "required": true,
+          "widget": "number",
+          "value_type": "int",
+          "min": 1
+        },
+        {
+          "name": "height",
+          "label": "Height",
+          "required": true,
+          "widget": "number",
+          "value_type": "int",
+          "min": 1
+        },
+        {
+          "name": "alt",
+          "label": "Alt",
+          "required": true,
+          "widget": "string"
+        },
+        {
+          "name": "credit",
+          "label": "Credit",
+          "required": false,
+          "widget": "string"
+        },
+        {
+          "name": "rightsStatus",
+          "label": "Rights Status",
+          "required": true,
+          "widget": "select",
+          "options": [
+            "pending",
+            "publisher-cleared"
+          ]
+        },
+        {
+          "name": "approval",
+          "label": "Approval",
+          "required": true,
+          "widget": "object",
+          "fields": [
+            {
+              "name": "state",
+              "label": "State",
+              "required": true,
+              "widget": "select",
+              "options": [
+                "draft",
+                "fact-checked",
+                "publisher-approved",
+                "published",
+                "archived"
+              ]
+            },
+            {
+              "name": "approvedBy",
+              "label": "Approved By",
+              "required": false,
+              "widget": "string"
+            },
+            {
+              "name": "approvedOn",
+              "label": "Approved On",
+              "required": false,
+              "widget": "datetime",
+              "format": "YYYY-MM-DD",
+              "date_format": "YYYY-MM-DD",
+              "time_format": false
+            },
+            {
+              "name": "notes",
+              "label": "Notes",
+              "required": true,
+              "widget": "text"
+            }
+          ],
+          "collapsed": true
+        },
+        {
+          "name": "sourceIds",
+          "widget": "hidden",
+          "default": []
+        }
+      ]
+    },
+    {
+      "name": "journal",
+      "label": "Journal links",
+      "folder": "content/journal",
+      "create": true,
+      "extension": "json",
+      "format": "json",
+      "identifier_field": "id",
+      "slug": "{{id}}",
+      "fields": [
+        {
+          "name": "id",
+          "label": "Id",
+          "widget": "string"
+        },
+        {
+          "name": "title",
+          "label": "Title",
+          "widget": "string"
+        },
+        {
+          "name": "category",
+          "label": "Category",
+          "widget": "string"
+        },
+        {
+          "name": "date",
+          "label": "Date",
+          "widget": "string"
+        },
+        {
+          "name": "label",
+          "label": "Label",
+          "widget": "string"
+        },
+        {
+          "name": "url",
+          "label": "Url",
+          "widget": "string"
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "widget": "text"
+        }
+      ]
+    },
+    {
+      "name": "settings",
+      "label": "Site settings",
+      "files": [
+        {
+          "name": "site",
+          "label": "Publisher settings",
+          "file": "content/settings/site.json",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Name",
+              "widget": "string"
+            },
+            {
+              "name": "url",
+              "label": "Url",
+              "widget": "string"
+            },
+            {
+              "name": "newsletter",
+              "label": "Newsletter",
+              "widget": "string"
+            },
+            {
+              "name": "newsletterEmbed",
+              "label": "Newsletterembed",
+              "widget": "string"
+            },
+            {
+              "name": "profile",
+              "label": "Profile",
+              "widget": "string"
+            },
+            {
+              "name": "manifesto",
+              "label": "Manifesto",
+              "widget": "string"
+            },
+            {
+              "name": "featured",
+              "label": "Featured",
+              "widget": "string"
+            },
+            {
+              "name": "launchApproved",
+              "label": "Launchapproved",
+              "widget": "boolean"
+            },
+            {
+              "name": "contactEmail",
+              "label": "Contactemail",
+              "widget": "string"
+            },
+            {
+              "name": "editorialApproved",
+              "label": "Editorialapproved",
+              "widget": "boolean"
+            },
+            {
+              "name": "rightsApproved",
+              "label": "Rightsapproved",
+              "widget": "boolean"
+            },
+            {
+              "name": "privacyApproved",
+              "label": "Privacyapproved",
+              "widget": "boolean"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "load_config_file": false
+}

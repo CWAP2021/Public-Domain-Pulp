@@ -1,0 +1,33 @@
+{
+  "id": "catalina-kindle",
+  "bookId": "catalina",
+  "format": "kindle",
+  "language": "en",
+  "publicationStatus": "preorder",
+  "publicationDate": null,
+  "retailerPublisherCredit": null,
+  "isbn13": null,
+  "asin": "B0HMMBC8WV",
+  "pageCount": null,
+  "links": [
+    {
+      "label": "Preorder Kindle on Amazon",
+      "url": "https://www.amazon.com/dp/B0HMMBC8WV",
+      "kind": "retailer",
+      "verification": "destination-verified",
+      "checkedOn": "2026-10-17",
+      "sourceIds": [
+        "retailer-catalina-kindle"
+      ]
+    }
+  ],
+  "approval": {
+    "state": "fact-checked",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Previously checked retailer link/status retained; no new publication date, price or ISBN inferred."
+  },
+  "sourceIds": [
+    "retailer-catalina-kindle"
+  ]
+}

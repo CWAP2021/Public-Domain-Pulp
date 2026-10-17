@@ -1,0 +1,33 @@
+{
+  "id": "twenty-five-dollars-a-night-kindle",
+  "bookId": "twenty-five-dollars-a-night",
+  "format": "kindle",
+  "language": "en",
+  "publicationStatus": "available",
+  "publicationDate": null,
+  "retailerPublisherCredit": null,
+  "isbn13": null,
+  "asin": "B0HJ9VW48L",
+  "pageCount": null,
+  "links": [
+    {
+      "label": "Kindle on Amazon",
+      "url": "https://www.amazon.com/dp/B0HJ9VW48L",
+      "kind": "retailer",
+      "verification": "destination-verified",
+      "checkedOn": "2026-10-17",
+      "sourceIds": [
+        "retailer-twenty-five-dollars-a-night-kindle"
+      ]
+    }
+  ],
+  "approval": {
+    "state": "fact-checked",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Previously checked retailer link/status retained; no new publication date, price or ISBN inferred."
+  },
+  "sourceIds": [
+    "retailer-twenty-five-dollars-a-night-kindle"
+  ]
+}

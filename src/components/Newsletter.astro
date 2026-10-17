@@ -1,0 +1,5 @@
+---
+import {site} from '../data/catalog';
+const {embedded=false,compact=false,eager=false,id}=Astro.props;
+---
+<section class:list={['newsletter',compact&&'compact']} id={id}><div class="wrap newsletter-inner"><div><p class="eyebrow">The next chapter</p><h2>Stay in the story.</h2><p>New books, sample chapters, and essays on the characters who keep finding new lives.</p>{!embedded&&<a class="button light" href={site.newsletter}>Subscribe on Substack <span aria-hidden="true">↗</span></a>}</div><div>{embedded?<><iframe src={site.newsletterEmbed} title="Subscribe to Public Domain Pulp on Substack" loading={eager?'eager':'lazy'} width="480" height="340"></iframe><a class="signup-fallback" href={site.newsletter}>Prefer to subscribe directly on Substack? ↗</a></>:<><p class="fine">Romance, noir, adventure—and the stories behind the books.</p><a class="signup-fallback" href="/journal/">Read the journal →</a></>}</div></div></section>

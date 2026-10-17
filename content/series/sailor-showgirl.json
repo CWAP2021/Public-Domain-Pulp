@@ -1,0 +1,40 @@
+{
+  "id": "sailor-showgirl",
+  "name": "The Sailor & the Showgirl",
+  "aliases": [
+    "The Sailor and the Showgirl"
+  ],
+  "slug": "the-sailor-and-the-showgirl",
+  "publishingLineId": null,
+  "description": "Betty Boop has a voice, ambitions, and very definite opinions about how a man should behave. Popeye has a living to earn at sea and a habit of showing his feelings by fixing things. Around the Long Beach waterfront, loving each other means dealing with nightclub work, dangerous employers, long absences, and an old disappearance that still matters. The Sailor & the Showgirl brings romance, screwball comedy, music, and crime into the lives of two familiar characters with plenty left to discover about each other.",
+  "genreLabels": [
+    "Romance",
+    "Noir",
+    "Screwball comedy"
+  ],
+  "recommendedStartingBookId": null,
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Ari series introduction imported verbatim; publisher approval pending. Series position does not prescribe a starting-point recommendation."
+  },
+  "sourceIds": [
+    "publisher-direction",
+    "claude-copy",
+    "kindle-mbh",
+    "ari-book-copy",
+    "ari-source-notes"
+  ],
+  "publicationOrder": [
+    "twenty-five-dollars-a-night",
+    "my-blue-heaven",
+    "catalina"
+  ],
+  "storyChronology": [
+    "my-blue-heaven",
+    "twenty-five-dollars-a-night",
+    "catalina"
+  ],
+  "visualTheme": "rust"
+}

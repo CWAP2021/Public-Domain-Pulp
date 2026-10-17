@@ -1,0 +1,19 @@
+{
+  "id": "cover-the-night-has-rules",
+  "path": "/covers/the-night-has-rules.webp",
+  "kind": "cover",
+  "width": 1024,
+  "height": 1536,
+  "alt": "The Night Has Rules cover by Wes Hamilton.",
+  "credit": null,
+  "rightsStatus": "pending",
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Web image exported from publisher-supplied TIFF Calder_City_Book_Two_Yellow_Coat.tif on 2026-10-17; original artwork preserved. Final rights approval pending."
+  },
+  "sourceIds": [
+    "asset-the-night-has-rules"
+  ]
+}

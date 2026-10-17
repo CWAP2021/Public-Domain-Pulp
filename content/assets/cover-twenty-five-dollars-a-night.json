@@ -1,0 +1,19 @@
+{
+  "id": "cover-twenty-five-dollars-a-night",
+  "path": "/covers/twenty-five-dollars-a-night.webp",
+  "kind": "cover",
+  "width": 1000,
+  "height": 1500,
+  "alt": "Twenty-Five Dollars a Night cover by Samara Bellingham.",
+  "credit": null,
+  "rightsStatus": "pending",
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Authentic source retained; final web master and rights approval pending."
+  },
+  "sourceIds": [
+    "asset-twenty-five-dollars-a-night"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "the-night-has-rules",
+  "slug": "the-night-has-rules",
+  "title": "The Night Has Rules",
+  "subtitle": null,
+  "contributors": [
+    {
+      "authorId": "wes-hamilton",
+      "role": "author",
+      "creditedAs": "Wes Hamilton"
+    }
+  ],
+  "seriesMemberships": [
+    {
+      "seriesId": "calder-city",
+      "position": 2,
+      "displayLabel": "Book Two",
+      "chronologicalPosition": null
+    }
+  ],
+  "genres": [
+    "Crime",
+    "Noir"
+  ],
+  "subgenres": [
+    "Noir · Crime"
+  ],
+  "publicationStatus": "forthcoming",
+  "coverAssetId": "cover-the-night-has-rules",
+  "excerpt": null,
+  "playlist": null,
+  "playlistQrAssetId": null,
+  "chronologyNote": null,
+  "seo": {
+    "title": "The Night Has Rules by Wes Hamilton | Public Domain Pulp",
+    "description": "Gangland killings put the Shadow’s name on Calder City’s lips. As Richard Wentworth, the Spider, enters the picture, Dick Tracy follows the evidence and Nancy Drew takes on a frightened client.",
+    "canonicalPath": "/books/the-night-has-rules/",
+    "socialImageAssetId": null,
+    "indexable": false
+  },
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Website record remains a draft. Retailer status retained from earlier directly inspected Amazon listings; not inferred from the new prose."
+  },
+  "sourceIds": [
+    "master-brief",
+    "ari-book-copy",
+    "ari-source-notes"
+  ],
+  "catalogTeaser": "Gangland killings put the Shadow’s name on Calder City’s lips. As Richard Wentworth, the Spider, enters the picture, Dick Tracy follows the evidence and Nancy Drew takes on a frightened client.",
+  "description": {
+    "hook": "Three dead men. A city full of explanations. The Shadow has reason to distrust all of them.",
+    "paragraphs": [
+      "The killings barely interrupt Calder City’s business until the victims include a man whose death leaves too much money waiting to be collected. Then the rumors gather around Kent Allard’s other identity.",
+      "Dick Tracy has murder files to connect. Nancy Drew has a client who keeps changing hotels and withholding the name of the person she fears. Blondie Bumstead listens for the details a frightened woman has left out.",
+      "Richard Wentworth and Nita Van Sloan are doing their own work. As Wentworth’s methods bring the Spider into conflict with the Shadow, the question of who is killing criminals becomes inseparable from what either man believes he is entitled to do.",
+      "A noir crime novel of parallel investigations, dangerous certainty, and the people caught between men who believe they can put a city right."
+    ],
+    "approval": {
+      "state": "draft",
+      "approvedBy": null,
+      "approvedOn": null,
+      "notes": "Ari editorial draft imported verbatim from delivered package; publisher approval pending."
+    },
+    "sourceIds": [
+      "ari-book-copy",
+      "ari-source-notes"
+    ]
+  },
+  "rightsReview": {
+    "status": "pending",
+    "notes": "Character/source versions, territories, release timing and marketing presentation remain for publisher/legal review. Naming decisions are editorial permissions, not legal clearance."
+  },
+  "prequelToBookId": null,
+  "literaryIdentification": "A Calder City noir featuring new interpretations of the Shadow, the Spider, Dick Tracy, Nancy Drew, and Blondie Bumstead."
+}

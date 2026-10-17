@@ -1,0 +1,887 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://publicdomainpulp.net/schemas/catalog.schema.json",
+  "title": "Public Domain Pulp linked content architecture",
+  "description": "Content review schema; no template or navigation assumes a fixed number of authors, series or publishing lines. Approval and evidence are internal, never rendered as book copy.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "settings",
+    "sources",
+    "publishingLines",
+    "authors",
+    "series",
+    "assets",
+    "books",
+    "editions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "settings": {
+      "$ref": "#/$defs/settings"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "publishingLines": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/line"
+      }
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/author"
+      }
+    },
+    "series": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/series"
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/asset"
+      }
+    },
+    "books": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/book"
+      }
+    },
+    "editions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/edition"
+      }
+    }
+  },
+  "$defs": {
+    "approval": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "enum": [
+            "draft",
+            "fact-checked",
+            "publisher-approved",
+            "published",
+            "archived"
+          ]
+        },
+        "approvedBy": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "approvedOn": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "state",
+        "approvedBy",
+        "approvedOn",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location": {
+          "type": "string",
+          "minLength": 1
+        },
+        "checkedOn": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "kind": {
+          "enum": [
+            "publisher-instruction",
+            "manuscript",
+            "retailer",
+            "editorial-draft",
+            "asset",
+            "public-post"
+          ]
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "location",
+        "checkedOn",
+        "kind",
+        "scope"
+      ],
+      "additionalProperties": false
+    },
+    "link": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "kind": {
+          "enum": [
+            "retailer",
+            "excerpt",
+            "playlist",
+            "newsletter",
+            "manifesto"
+          ]
+        },
+        "verification": {
+          "enum": [
+            "unverified",
+            "source-linked",
+            "destination-verified"
+          ]
+        },
+        "checkedOn": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        }
+      },
+      "required": [
+        "label",
+        "url",
+        "kind",
+        "verification",
+        "checkedOn",
+        "sourceIds"
+      ],
+      "additionalProperties": false
+    },
+    "author": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "isPenName": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "bio": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "photoAssetId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "approval": {
+          "$ref": "#/$defs/approval"
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "displayName",
+        "isPenName",
+        "slug",
+        "bio",
+        "photoAssetId",
+        "approval",
+        "sourceIds"
+      ],
+      "additionalProperties": false
+    },
+    "line": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "approval": {
+          "$ref": "#/$defs/approval"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "slug",
+        "description",
+        "approval"
+      ],
+      "additionalProperties": false
+    },
+    "series": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "publishingLineId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "genreLabels": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "recommendedStartingBookId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "approval": {
+          "$ref": "#/$defs/approval"
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        },
+        "publicationOrder": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "storyChronology": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "visualTheme": {
+          "enum": [
+            "navy",
+            "forest",
+            "rust"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "aliases",
+        "slug",
+        "publishingLineId",
+        "description",
+        "genreLabels",
+        "recommendedStartingBookId",
+        "approval",
+        "sourceIds"
+      ],
+      "additionalProperties": false
+    },
+    "asset": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "cover",
+            "photo",
+            "logo",
+            "social-image",
+            "qr-code"
+          ]
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "alt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "credit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rightsStatus": {
+          "enum": [
+            "pending",
+            "publisher-cleared"
+          ]
+        },
+        "approval": {
+          "$ref": "#/$defs/approval"
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "path",
+        "kind",
+        "width",
+        "height",
+        "alt",
+        "credit",
+        "rightsStatus",
+        "approval",
+        "sourceIds"
+      ],
+      "additionalProperties": false
+    },
+    "contributor": {
+      "type": "object",
+      "properties": {
+        "authorId": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "role": {
+          "enum": [
+            "author",
+            "editor",
+            "translator",
+            "illustrator"
+          ]
+        },
+        "creditedAs": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "authorId",
+        "role",
+        "creditedAs"
+      ],
+      "additionalProperties": false
+    },
+    "membership": {
+      "type": "object",
+      "properties": {
+        "seriesId": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "position": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "displayLabel": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chronologicalPosition": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        }
+      },
+      "required": [
+        "seriesId",
+        "position",
+        "displayLabel"
+      ],
+      "additionalProperties": false
+    },
+    "seo": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "canonicalPath": {
+          "type": "string",
+          "pattern": "^/books/[a-z0-9-]+/$"
+        },
+        "socialImageAssetId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "indexable": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "canonicalPath",
+        "socialImageAssetId",
+        "indexable"
+      ],
+      "additionalProperties": false
+    },
+    "book": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "contributors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/contributor"
+          }
+        },
+        "seriesMemberships": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/membership"
+          }
+        },
+        "genres": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "subgenres": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "publicationStatus": {
+          "enum": [
+            "published",
+            "forthcoming",
+            "in-development",
+            "withdrawn"
+          ]
+        },
+        "description": {
+          "type": "object",
+          "properties": {
+            "hook": {
+              "type": "string",
+              "minLength": 1
+            },
+            "paragraphs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "approval": {
+              "$ref": "#/$defs/approval"
+            },
+            "sourceIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              }
+            }
+          },
+          "required": [
+            "hook",
+            "paragraphs",
+            "approval",
+            "sourceIds"
+          ],
+          "additionalProperties": false
+        },
+        "coverAssetId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "excerpt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/link"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "playlist": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/link"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "chronologyNote": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "seo": {
+          "$ref": "#/$defs/seo"
+        },
+        "approval": {
+          "$ref": "#/$defs/approval"
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        },
+        "playlistQrAssetId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "catalogTeaser": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prequelToBookId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rightsReview": {
+          "type": "object",
+          "required": [
+            "status",
+            "notes"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "publisher-cleared"
+              ]
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        },
+        "literaryIdentification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Descriptive character/source identification; separate from title, subtitle, byline and branding. Draft until publisher/source review."
+        }
+      },
+      "required": [
+        "id",
+        "slug",
+        "title",
+        "subtitle",
+        "contributors",
+        "seriesMemberships",
+        "genres",
+        "subgenres",
+        "publicationStatus",
+        "description",
+        "coverAssetId",
+        "excerpt",
+        "playlist",
+        "chronologyNote",
+        "seo",
+        "approval",
+        "sourceIds",
+        "playlistQrAssetId"
+      ],
+      "additionalProperties": false
+    },
+    "edition": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "bookId": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "format": {
+          "enum": [
+            "kindle",
+            "paperback",
+            "hardback",
+            "epub",
+            "audiobook"
+          ]
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publicationStatus": {
+          "enum": [
+            "available",
+            "preorder",
+            "unavailable"
+          ]
+        },
+        "publicationDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "retailerPublisherCredit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "isbn13": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9]{13}$"
+        },
+        "asin": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[A-Z0-9]{10}$"
+        },
+        "pageCount": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/link"
+          }
+        },
+        "approval": {
+          "$ref": "#/$defs/approval"
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "bookId",
+        "format",
+        "language",
+        "publicationStatus",
+        "publicationDate",
+        "retailerPublisherCredit",
+        "isbn13",
+        "asin",
+        "pageCount",
+        "links",
+        "approval",
+        "sourceIds"
+      ],
+      "additionalProperties": false
+    },
+    "settings": {
+      "type": "object",
+      "properties": {
+        "publisher": {
+          "type": "string",
+          "minLength": 1
+        },
+        "canonicalSiteUrl": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "newsletter": {
+          "$ref": "#/$defs/link"
+        },
+        "manifesto": {
+          "$ref": "#/$defs/link"
+        },
+        "contactEmail": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "publisher",
+        "canonicalSiteUrl",
+        "newsletter",
+        "manifesto",
+        "contactEmail"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

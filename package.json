@@ -1,0 +1,27 @@
+{
+  "name": "public-domain-pulp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev --host 127.0.0.1",
+    "build": "node scripts/check-content.mjs && ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview --host 127.0.0.1",
+    "test": "node scripts/check-site.mjs",
+    "check:launch": "node scripts/check-content.mjs --launch",
+    "check:content": "node scripts/check-content.mjs",
+    "cms": "BIND_HOST=127.0.0.1 decap-server"
+  },
+  "dependencies": {
+    "@fontsource/source-sans-3": "^5.2.8",
+    "@fontsource/source-serif-4": "^5.2.8",
+    "astro": "^6.0.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "decap-server": "^3.11.5",
+    "playwright": "^1.58.0"
+  }
+}

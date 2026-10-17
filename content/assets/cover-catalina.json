@@ -1,0 +1,19 @@
+{
+  "id": "cover-catalina",
+  "path": "/covers/catalina.webp",
+  "kind": "cover",
+  "width": 1024,
+  "height": 1536,
+  "alt": "Catalina cover by Samara Bellingham.",
+  "credit": null,
+  "rightsStatus": "pending",
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Web image exported from publisher-supplied Catalina_Amazon_300dpi.tiff on 2026-10-17; original artwork preserved. Final rights approval pending."
+  },
+  "sourceIds": [
+    "asset-catalina"
+  ]
+}

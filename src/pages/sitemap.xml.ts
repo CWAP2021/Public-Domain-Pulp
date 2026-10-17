@@ -1,0 +1,2 @@
+import {books,series,authors,site} from '../data/catalog';
+export function GET(){const paths=['/','/books/','/series/','/about/','/journal/','/community/','/contact/','/privacy/','/accessibility/',...books.map(b=>`/books/${b.slug}/`),...series.map(s=>`/series/${s.slug}/`),...authors.map(a=>`/authors/${a.slug}/`)];return new Response(`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${paths.map(p=>`<url><loc>${new URL(p,site.url).href}</loc></url>`).join('')}</urlset>`,{headers:{'Content-Type':'application/xml'}});}

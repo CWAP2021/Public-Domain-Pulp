@@ -1,0 +1,33 @@
+{
+  "id": "familiar-faces-dirty-business-kindle",
+  "bookId": "familiar-faces-dirty-business",
+  "format": "kindle",
+  "language": "en",
+  "publicationStatus": "preorder",
+  "publicationDate": null,
+  "retailerPublisherCredit": null,
+  "isbn13": null,
+  "asin": "B0HJX1FYG5",
+  "pageCount": null,
+  "links": [
+    {
+      "label": "Preorder Kindle on Amazon",
+      "url": "https://www.amazon.com/dp/B0HJX1FYG5",
+      "kind": "retailer",
+      "verification": "destination-verified",
+      "checkedOn": "2026-10-17",
+      "sourceIds": [
+        "retailer-familiar-faces-dirty-business-kindle"
+      ]
+    }
+  ],
+  "approval": {
+    "state": "fact-checked",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Previously checked retailer link/status retained; no new publication date, price or ISBN inferred."
+  },
+  "sourceIds": [
+    "retailer-familiar-faces-dirty-business-kindle"
+  ]
+}

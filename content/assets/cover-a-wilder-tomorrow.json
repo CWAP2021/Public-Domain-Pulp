@@ -1,0 +1,19 @@
+{
+  "id": "cover-a-wilder-tomorrow",
+  "path": "/covers/a-wilder-tomorrow.webp",
+  "kind": "cover",
+  "width": 1000,
+  "height": 1546,
+  "alt": "A Wilder Tomorrow cover by Samara Bellingham.",
+  "credit": null,
+  "rightsStatus": "pending",
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Authentic source retained; final web master and rights approval pending."
+  },
+  "sourceIds": [
+    "asset-a-wilder-tomorrow"
+  ]
+}

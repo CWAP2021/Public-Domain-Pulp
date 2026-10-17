@@ -1,0 +1,19 @@
+{
+  "id": "cover-my-blue-heaven",
+  "path": "/covers/my-blue-heaven.webp",
+  "kind": "cover",
+  "width": 1000,
+  "height": 1500,
+  "alt": "My Blue Heaven cover by Samara Bellingham, The Sailor and the Showgirl, Book Two.",
+  "credit": null,
+  "rightsStatus": "pending",
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Authentic supplied artwork, visually checked. Publisher confirms final web master and permissions before launch."
+  },
+  "sourceIds": [
+    "mbh-cover"
+  ]
+}

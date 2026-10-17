@@ -1,0 +1,6 @@
+---
+import {books} from '../data/catalog';
+const {series}=Astro.props;
+const cover=books.find(b=>b.slug===series.cover)!;
+---
+<article class:list={['series-panel',series.color]}><div class="series-copy"><span class="series-number">{series.number} / THE SERIES</span><p class="eyebrow">{series.genre}</p><h3><a href={`/series/${series.slug}/`}>{series.name}</a></h3><p>{series.description}</p><a class="text-link" href={`/series/${series.slug}/`}>Explore the series <span aria-hidden="true">→</span></a></div><a class="series-cover" href={`/series/${series.slug}/`} aria-label={`Explore ${series.name}`}><img src={cover.cover!} width="300" height="450" alt="" loading="lazy"/></a></article>

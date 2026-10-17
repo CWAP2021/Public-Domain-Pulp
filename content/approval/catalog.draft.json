@@ -1,0 +1,1516 @@
+{
+  "schemaVersion": "1.0.0",
+  "settings": {
+    "publisher": "Public Domain Pulp",
+    "canonicalSiteUrl": "https://publicdomainpulp.net",
+    "newsletter": {
+      "label": "Subscribe on Substack",
+      "url": "https://substack.com/@publicdomainpulppress",
+      "kind": "newsletter",
+      "verification": "destination-verified",
+      "checkedOn": "2026-10-17",
+      "sourceIds": [
+        "publisher-direction",
+        "substack-profile"
+      ]
+    },
+    "manifesto": {
+      "label": "Read the manifesto",
+      "url": "https://publicdomainpulppress.substack.com/p/manifesto-the-public-domain-is-not",
+      "kind": "manifesto",
+      "verification": "destination-verified",
+      "checkedOn": "2026-10-17",
+      "sourceIds": [
+        "manifesto"
+      ]
+    },
+    "contactEmail": null
+  },
+  "sources": [
+    {
+      "id": "publisher-direction",
+      "label": "Publisher content-first instruction, 17 October 2026",
+      "location": "Current chat",
+      "checkedOn": "2026-10-17",
+      "kind": "publisher-instruction",
+      "scope": "Separate authors/series; one My Blue Heaven page; primary Substack profile; future publishing lines. Publisher explicitly confirms My Blue Heaven is the prequel to Twenty-Five Dollars a Night."
+    },
+    {
+      "id": "claude-copy",
+      "label": "Editorial Copy Package, 17 October 2026, revised pasted version",
+      "location": "docs/content-review/Editorial_Copy_Package_2026-10-17.txt",
+      "checkedOn": "2026-10-17",
+      "kind": "editorial-draft",
+      "scope": "Pen-name assignments, genre language and page hierarchy. Revision confirms My Blue Heaven Book Two and Catalina Book Three; records development-title rename and nonpublic treatment. Several plot and newsletter assertions still need verification."
+    },
+    {
+      "id": "kindle-mbh",
+      "label": "My Blue Heaven Kindle detail page",
+      "location": "https://www.amazon.com/dp/B0HLN6C27N",
+      "checkedOn": "2026-10-17",
+      "kind": "retailer",
+      "scope": "Title, byline, Book Two, Kindle format, date 2026-10-15, 307-page retailer print length and story description."
+    },
+    {
+      "id": "paperback-mbh",
+      "label": "My Blue Heaven paperback detail page",
+      "location": "https://www.amazon.com/dp/B0HMFVZWCN",
+      "checkedOn": "2026-10-17",
+      "kind": "retailer",
+      "scope": "Title/byline, paperback in stock, date 2026-10-15, 260 pages, ISBN 9798160818450; retail publisher field Independently published."
+    },
+    {
+      "id": "mbh-manuscript",
+      "label": "My Blue Heaven supplied manuscript",
+      "location": "https://drive.google.com/file/d/14dtlPdgpuL-WJcU1yCnHg0dWxVxO1xKp/view",
+      "checkedOn": "2026-10-17",
+      "kind": "manuscript",
+      "scope": "Publisher identity, byline, human-directed AI-assisted label, music structure and companion playlist."
+    },
+    {
+      "id": "mbh-cover",
+      "label": "Existing paperback production cover",
+      "location": "/Users/kevinvaughn/Documents/Codex/2026-10-07/referenced-chatgpt-conversation-this-is-an/outputs/covers/My_Blue_Heaven_Full_Wrap.pdf",
+      "checkedOn": "2026-10-17",
+      "kind": "asset",
+      "scope": "Front image extracted and optimized without changing the artwork; displayed cover says Book Two and Samara Bellingham."
+    },
+    {
+      "id": "substack-profile",
+      "label": "Publisher-confirmed Substack profile",
+      "location": "https://substack.com/@publicdomainpulppress",
+      "checkedOn": "2026-10-17",
+      "kind": "publisher-instruction",
+      "scope": "Canonical primary newsletter destination; profile and publication link observed in browser."
+    },
+    {
+      "id": "manifesto",
+      "label": "Manifesto: The Public Domain Is Not a Museum",
+      "location": "https://publicdomainpulppress.substack.com/p/manifesto-the-public-domain-is-not",
+      "checkedOn": "2026-10-17",
+      "kind": "public-post",
+      "scope": "Publisher editorial identity and accurately explained AI-assisted process."
+    },
+    {
+      "id": "mbh-excerpt",
+      "label": "A First Look at My Blue Heaven",
+      "location": "https://publicdomainpulppress.substack.com/p/a-first-look-at-my-blue-heaven",
+      "checkedOn": "2026-10-17",
+      "kind": "public-post",
+      "scope": "Directly opened 17 October 2026; heading confirms Book Two, Chapter Four and readable chapter text was present. Substack displayed a signup modal; permanent free access not promised."
+    },
+    {
+      "id": "master-brief",
+      "label": "Original master brief",
+      "location": "PublicDomainPulp_Website_Specification.md section 1, S1",
+      "checkedOn": "2026-10-17",
+      "kind": "publisher-instruction",
+      "scope": "Three canonical working series, nine-title inventory, publisher identity and commercial objectives."
+    },
+    {
+      "id": "publisher-spotify-qr",
+      "label": "Publisher-supplied Spotify playlist QR",
+      "location": "/Users/kevinvaughn/Downloads/spotify_playlist_qr (3).png",
+      "checkedOn": "2026-10-17",
+      "kind": "asset",
+      "scope": "Publisher requests this unchanged QR image on the My Blue Heaven page, alongside its existing playlist link. QR payload not independently decoded in this environment."
+    },
+    {
+      "id": "publisher-spotify-link",
+      "label": "Publisher-supplied clickable Spotify link",
+      "location": "https://open.spotify.com/playlist/6RCjxSxzDtJNpj5rmsroVg?si=nDw-JdmERdyT6k4qclE96A",
+      "checkedOn": "2026-10-17",
+      "kind": "publisher-instruction",
+      "scope": "Direct publisher confirmation of companion playlist destination; same playlist ID as manuscript."
+    },
+    {
+      "id": "ari-book-copy",
+      "label": "Ari source-grounded website copy, received 17 October 2026",
+      "location": "docs/content-review/Public_Domain_Pulp_Website_Copy.md",
+      "checkedOn": "2026-10-17",
+      "kind": "editorial-draft",
+      "scope": "Three series introductions and eight catalog teasers/page blurbs; all prose draft, publisher approval pending. Explicit My Blue Heaven prequel label included."
+    },
+    {
+      "id": "ari-source-notes",
+      "label": "Ari manuscript and continuity source notes",
+      "location": "docs/content-review/Public_Domain_Pulp_Copy_Source_Notes.md",
+      "checkedOn": "2026-10-17",
+      "kind": "editorial-draft",
+      "scope": "Internal manuscript provenance, spoilers to withhold, chronology, version limitations and pending rights/title review. Not public website text."
+    },
+    {
+      "id": "asset-twenty-five-dollars-a-night",
+      "label": "Previously located authentic cover: Twenty-Five Dollars a Night",
+      "location": "/covers/twenty-five-dollars-a-night.webp",
+      "checkedOn": "2026-10-17",
+      "kind": "asset",
+      "scope": "Existing project web derivative from supplied production cover or observed retailer cover; final edition mapping and web-use approval remain pending."
+    },
+    {
+      "id": "retailer-twenty-five-dollars-a-night-kindle",
+      "label": "Twenty-Five Dollars a Night Kindle retailer listing",
+      "location": "https://www.amazon.com/dp/B0HJ9VW48L",
+      "checkedOn": "2026-10-17",
+      "kind": "retailer",
+      "scope": "Amazon publisher series listing, title/byline/format and offer checked in browser; metadata preserved from the website project, not supplied by Ari copy."
+    },
+    {
+      "id": "asset-catalina",
+      "label": "Previously located authentic cover: Catalina",
+      "location": "/covers/catalina.jpg",
+      "checkedOn": "2026-10-17",
+      "kind": "asset",
+      "scope": "Existing project web derivative from supplied production cover or observed retailer cover; final edition mapping and web-use approval remain pending."
+    },
+    {
+      "id": "retailer-catalina-kindle",
+      "label": "Catalina Kindle retailer listing",
+      "location": "https://www.amazon.com/dp/B0HMMBC8WV",
+      "checkedOn": "2026-10-17",
+      "kind": "retailer",
+      "scope": "Amazon publisher series listing, title/byline/format and offer checked in browser; metadata preserved from the website project, not supplied by Ari copy."
+    },
+    {
+      "id": "asset-tomorrow",
+      "label": "Previously located authentic cover: Tomorrow",
+      "location": "/covers/tomorrow.webp",
+      "checkedOn": "2026-10-17",
+      "kind": "asset",
+      "scope": "Existing project web derivative from supplied production cover or observed retailer cover; final edition mapping and web-use approval remain pending."
+    },
+    {
+      "id": "retailer-tomorrow-kindle",
+      "label": "Tomorrow Kindle retailer listing",
+      "location": "https://www.amazon.com/dp/B0HJF1L9VB",
+      "checkedOn": "2026-10-17",
+      "kind": "retailer",
+      "scope": "Amazon publisher series listing, title/byline/format and offer checked in browser; metadata preserved from the website project, not supplied by Ari copy."
+    },
+    {
+      "id": "asset-the-man-from-africa",
+      "label": "Previously located authentic cover: The Man from Africa",
+      "location": "/covers/the-man-from-africa.webp",
+      "checkedOn": "2026-10-17",
+      "kind": "asset",
+      "scope": "Existing project web derivative from supplied production cover or observed retailer cover; final edition mapping and web-use approval remain pending."
+    },
+    {
+      "id": "retailer-the-man-from-africa-kindle",
+      "label": "The Man from Africa Kindle retailer listing",
+      "location": "https://www.amazon.com/dp/B0HJ6NQF2Q",
+      "checkedOn": "2026-10-17",
+      "kind": "retailer",
+      "scope": "Amazon publisher series listing, title/byline/format and offer checked in browser; metadata preserved from the website project, not supplied by Ari copy."
+    },
+    {
+      "id": "asset-a-wilder-tomorrow",
+      "label": "Previously located authentic cover: A Wilder Tomorrow",
+      "location": "/covers/a-wilder-tomorrow.webp",
+      "checkedOn": "2026-10-17",
+      "kind": "asset",
+      "scope": "Existing project web derivative from supplied production cover or observed retailer cover; final edition mapping and web-use approval remain pending."
+    },
+    {
+      "id": "retailer-a-wilder-tomorrow-kindle",
+      "label": "A Wilder Tomorrow Kindle retailer listing",
+      "location": "https://www.amazon.com/dp/B0HJ6TCRN7",
+      "checkedOn": "2026-10-17",
+      "kind": "retailer",
+      "scope": "Amazon publisher series listing, title/byline/format and offer checked in browser; metadata preserved from the website project, not supplied by Ari copy."
+    },
+    {
+      "id": "asset-familiar-faces-dirty-business",
+      "label": "Previously located authentic cover: Familiar Faces, Dirty Business",
+      "location": "/covers/familiar-faces-dirty-business.webp",
+      "checkedOn": "2026-10-17",
+      "kind": "asset",
+      "scope": "Existing project web derivative from supplied production cover or observed retailer cover; final edition mapping and web-use approval remain pending."
+    },
+    {
+      "id": "retailer-familiar-faces-dirty-business-kindle",
+      "label": "Familiar Faces, Dirty Business Kindle retailer listing",
+      "location": "https://www.amazon.com/dp/B0HJX1FYG5",
+      "checkedOn": "2026-10-17",
+      "kind": "retailer",
+      "scope": "Amazon publisher series listing, title/byline/format and offer checked in browser; metadata preserved from the website project, not supplied by Ari copy."
+    },
+    {
+      "id": "asset-the-night-has-rules",
+      "label": "Previously located authentic cover: The Night Has Rules",
+      "location": "/covers/the-night-has-rules.webp",
+      "checkedOn": "2026-10-17",
+      "kind": "asset",
+      "scope": "Existing project web derivative from supplied production cover or observed retailer cover; final edition mapping and web-use approval remain pending."
+    },
+    {
+      "id": "retailer-the-night-has-rules-kindle",
+      "label": "The Night Has Rules Kindle retailer listing",
+      "location": "https://www.amazon.com/dp/B0HLWQX1NS",
+      "checkedOn": "2026-10-17",
+      "kind": "retailer",
+      "scope": "Amazon publisher series listing, title/byline/format and offer checked in browser; metadata preserved from the website project, not supplied by Ari copy."
+    }
+  ],
+  "publishingLines": [],
+  "authors": [
+    {
+      "id": "samara-bellingham",
+      "displayName": "Samara Bellingham",
+      "isPenName": true,
+      "slug": "samara-bellingham",
+      "bio": null,
+      "photoAssetId": null,
+      "approval": {
+        "state": "fact-checked",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Byline verified. No biography or legal identity inferred. Pen-name classification supplied by editorial package."
+      },
+      "sourceIds": [
+        "claude-copy",
+        "kindle-mbh",
+        "paperback-mbh"
+      ]
+    },
+    {
+      "id": "wes-hamilton",
+      "displayName": "Wes Hamilton",
+      "isPenName": true,
+      "slug": "wes-hamilton",
+      "bio": null,
+      "photoAssetId": null,
+      "approval": {
+        "state": "fact-checked",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Calder City byline supplied in brief/copy package; biography not supplied."
+      },
+      "sourceIds": [
+        "claude-copy",
+        "master-brief"
+      ]
+    }
+  ],
+  "series": [
+    {
+      "id": "sailor-showgirl",
+      "name": "The Sailor & the Showgirl",
+      "aliases": [
+        "The Sailor and the Showgirl"
+      ],
+      "slug": "the-sailor-and-the-showgirl",
+      "publishingLineId": null,
+      "description": "Betty Boop has a voice, ambitions, and very definite opinions about how a man should behave. Popeye has a living to earn at sea and a habit of showing his feelings by fixing things. Around the Long Beach waterfront, loving each other means dealing with nightclub work, dangerous employers, long absences, and an old disappearance that still matters. The Sailor & the Showgirl brings romance, screwball comedy, music, and crime into the lives of two familiar characters with plenty left to discover about each other.",
+      "genreLabels": [
+        "Romance",
+        "Noir",
+        "Screwball comedy"
+      ],
+      "recommendedStartingBookId": null,
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Ari series introduction imported verbatim; publisher approval pending. Series position does not prescribe a starting-point recommendation."
+      },
+      "sourceIds": [
+        "publisher-direction",
+        "claude-copy",
+        "kindle-mbh",
+        "ari-book-copy",
+        "ari-source-notes"
+      ],
+      "publicationOrder": [
+        "twenty-five-dollars-a-night",
+        "my-blue-heaven",
+        "catalina"
+      ],
+      "storyChronology": [
+        "my-blue-heaven",
+        "twenty-five-dollars-a-night",
+        "catalina"
+      ]
+    },
+    {
+      "id": "jane-chronicles",
+      "name": "The Jane Chronicles",
+      "aliases": [
+        "The Jane Porter Chronicles"
+      ],
+      "slug": "the-jane-chronicles",
+      "publishingLineId": null,
+      "description": "Jane Porter chooses a life in Africa. An accident carries her six centuries into the future, to a Baltimore that remembers Tarzan far better than it remembers her. Across three novels, Jane finds work, desire, friendship, and a world whose promises of safety come with difficult conditions. As the past follows her and the country beyond the city opens, she must decide what she wants to build—and who gets a say in the life she calls her own.",
+      "genreLabels": [
+        "Speculative romance"
+      ],
+      "recommendedStartingBookId": null,
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Ari series introduction imported verbatim; publisher approval pending. Series position does not prescribe a starting-point recommendation."
+      },
+      "sourceIds": [
+        "publisher-direction",
+        "claude-copy",
+        "ari-book-copy",
+        "ari-source-notes"
+      ],
+      "publicationOrder": [
+        "tomorrow",
+        "the-man-from-africa",
+        "a-wilder-tomorrow"
+      ],
+      "storyChronology": []
+    },
+    {
+      "id": "calder-city",
+      "name": "Calder City",
+      "aliases": [],
+      "slug": "calder-city",
+      "publishingLineId": null,
+      "description": "Nancy Drew earns her living asking questions. Blondie Bumstead knows how to make people answer without noticing. Dick Tracy needs evidence he can use. Kent Allard, the Shadow, works by other rules. In Calder City, their investigations cross private bedrooms, expensive hotels, police offices, and the waterfront, where respectable business and criminal power share more than an address. These are adult noir novels about money, appetite, violence, and the price of finding out.",
+      "genreLabels": [
+        "Crime",
+        "Noir"
+      ],
+      "recommendedStartingBookId": null,
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Ari series introduction imported verbatim; publisher approval pending. Series position does not prescribe a starting-point recommendation."
+      },
+      "sourceIds": [
+        "publisher-direction",
+        "claude-copy",
+        "ari-book-copy",
+        "ari-source-notes"
+      ],
+      "publicationOrder": [
+        "familiar-faces-dirty-business",
+        "the-night-has-rules"
+      ],
+      "storyChronology": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "my-blue-heaven-playlist-qr",
+      "path": "/music/my-blue-heaven-spotify-qr.png",
+      "kind": "qr-code",
+      "width": 900,
+      "height": 900,
+      "alt": "QR code for the My Blue Heaven companion Spotify playlist.",
+      "credit": null,
+      "rightsStatus": "publisher-cleared",
+      "approval": {
+        "state": "publisher-approved",
+        "approvedBy": "Publisher, direct instruction in chat",
+        "approvedOn": "2026-10-17",
+        "notes": "Supplied unchanged for inclusion in the playlist section. No QR payload verification claim."
+      },
+      "sourceIds": [
+        "publisher-spotify-qr"
+      ]
+    },
+    {
+      "id": "cover-twenty-five-dollars-a-night",
+      "path": "/covers/twenty-five-dollars-a-night.webp",
+      "kind": "cover",
+      "width": 1000,
+      "height": 1500,
+      "alt": "Twenty-Five Dollars a Night cover by Samara Bellingham.",
+      "credit": null,
+      "rightsStatus": "pending",
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Authentic source retained; final web master and rights approval pending."
+      },
+      "sourceIds": [
+        "asset-twenty-five-dollars-a-night"
+      ]
+    },
+    {
+      "id": "cover-my-blue-heaven",
+      "path": "/covers/my-blue-heaven.webp",
+      "kind": "cover",
+      "width": 1000,
+      "height": 1500,
+      "alt": "My Blue Heaven cover by Samara Bellingham, The Sailor and the Showgirl, Book Two.",
+      "credit": null,
+      "rightsStatus": "pending",
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Authentic supplied artwork, visually checked. Publisher confirms final web master and permissions before launch."
+      },
+      "sourceIds": [
+        "mbh-cover"
+      ]
+    },
+    {
+      "id": "cover-catalina",
+      "path": "/covers/catalina.jpg",
+      "kind": "cover",
+      "width": 348,
+      "height": 522,
+      "alt": "Catalina cover by Samara Bellingham.",
+      "credit": null,
+      "rightsStatus": "pending",
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Authentic source retained; final web master and rights approval pending."
+      },
+      "sourceIds": [
+        "asset-catalina"
+      ]
+    },
+    {
+      "id": "cover-tomorrow",
+      "path": "/covers/tomorrow.webp",
+      "kind": "cover",
+      "width": 1000,
+      "height": 1546,
+      "alt": "Tomorrow cover by Samara Bellingham.",
+      "credit": null,
+      "rightsStatus": "pending",
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Authentic source retained; final web master and rights approval pending."
+      },
+      "sourceIds": [
+        "asset-tomorrow"
+      ]
+    },
+    {
+      "id": "cover-the-man-from-africa",
+      "path": "/covers/the-man-from-africa.webp",
+      "kind": "cover",
+      "width": 1000,
+      "height": 1500,
+      "alt": "The Man from Africa cover by Samara Bellingham.",
+      "credit": null,
+      "rightsStatus": "pending",
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Authentic source retained; final web master and rights approval pending."
+      },
+      "sourceIds": [
+        "asset-the-man-from-africa"
+      ]
+    },
+    {
+      "id": "cover-a-wilder-tomorrow",
+      "path": "/covers/a-wilder-tomorrow.webp",
+      "kind": "cover",
+      "width": 1000,
+      "height": 1546,
+      "alt": "A Wilder Tomorrow cover by Samara Bellingham.",
+      "credit": null,
+      "rightsStatus": "pending",
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Authentic source retained; final web master and rights approval pending."
+      },
+      "sourceIds": [
+        "asset-a-wilder-tomorrow"
+      ]
+    },
+    {
+      "id": "cover-familiar-faces-dirty-business",
+      "path": "/covers/familiar-faces-dirty-business.webp",
+      "kind": "cover",
+      "width": 1000,
+      "height": 1600,
+      "alt": "Familiar Faces, Dirty Business cover by Wes Hamilton.",
+      "credit": null,
+      "rightsStatus": "pending",
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Authentic source retained; final web master and rights approval pending."
+      },
+      "sourceIds": [
+        "asset-familiar-faces-dirty-business"
+      ]
+    },
+    {
+      "id": "cover-the-night-has-rules",
+      "path": "/covers/the-night-has-rules.webp",
+      "kind": "cover",
+      "width": 1000,
+      "height": 1500,
+      "alt": "The Night Has Rules cover by Wes Hamilton.",
+      "credit": null,
+      "rightsStatus": "pending",
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Authentic source retained; final web master and rights approval pending."
+      },
+      "sourceIds": [
+        "asset-the-night-has-rules"
+      ]
+    }
+  ],
+  "books": [
+    {
+      "id": "twenty-five-dollars-a-night",
+      "slug": "twenty-five-dollars-a-night",
+      "title": "Twenty-Five Dollars a Night",
+      "subtitle": null,
+      "contributors": [
+        {
+          "authorId": "samara-bellingham",
+          "role": "author",
+          "creditedAs": "Samara Bellingham"
+        }
+      ],
+      "seriesMemberships": [
+        {
+          "seriesId": "sailor-showgirl",
+          "position": 1,
+          "displayLabel": "Book One",
+          "chronologicalPosition": 2
+        }
+      ],
+      "genres": [
+        "Romance"
+      ],
+      "subgenres": [
+        "Crime · Comedy · Romance"
+      ],
+      "publicationStatus": "published",
+      "coverAssetId": "cover-twenty-five-dollars-a-night",
+      "excerpt": null,
+      "playlist": null,
+      "playlistQrAssetId": null,
+      "chronologyNote": null,
+      "seo": {
+        "title": "Twenty-Five Dollars a Night by Samara Bellingham | Public Domain Pulp",
+        "description": "Frank Bluto offers Betty Boop twenty-five dollars a night to listen. When she disappears and Mabel is beaten, Popeye comes ashore to find that easy money has become dangerous business.",
+        "canonicalPath": "/books/twenty-five-dollars-a-night/",
+        "socialImageAssetId": null,
+        "indexable": false
+      },
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Website record remains a draft. Retailer status retained from earlier directly inspected Amazon listings; not inferred from the new prose."
+      },
+      "sourceIds": [
+        "master-brief",
+        "ari-book-copy",
+        "ari-source-notes"
+      ],
+      "catalogTeaser": "Frank Bluto offers Betty Boop twenty-five dollars a night to listen. When she disappears and Mabel is beaten, Popeye comes ashore to find that easy money has become dangerous business.",
+      "description": {
+        "hook": "Twenty-five dollars a night. All Betty has to do is listen.",
+        "paragraphs": [
+          "Betty Boop knows how to get men talking. At Frank Bluto’s nightclub, that talent can sell champagne, win a better tip—or earn her money for overhearing conversations the men upstairs would rather keep private.",
+          "Betty has plans for herself, and being underestimated has always been useful. But when Popeye comes home with flowers, Betty is missing and her best friend Mabel has been beaten by men asking where she went.",
+          "Now a sailor with little patience for explanations has questions nobody wants to answer. Betty has information worth more than her wages. And the people who paid her to listen have very different ideas about what she should do with what she heard.",
+          "A waterfront crime adventure with a sharp comic tongue, a dangerous wire reel, and a showgirl determined to have a say in her own rescue."
+        ],
+        "approval": {
+          "state": "draft",
+          "approvedBy": null,
+          "approvedOn": null,
+          "notes": "Ari editorial draft imported verbatim from delivered package; publisher approval pending. Publisher naming correction, 17 October 2026: Betty Bupinski and Pop-Eye supersede earlier website naming. Latest publisher instruction: use Betty Boop and Popeye directly in website copy; supersedes the earlier Bupinski/Pop-Eye preference."
+        },
+        "sourceIds": [
+          "ari-book-copy",
+          "ari-source-notes"
+        ]
+      },
+      "rightsReview": {
+        "status": "pending",
+        "notes": "Character/source versions, territories, release timing and marketing presentation remain for publisher/legal review. Naming decisions are editorial permissions, not legal clearance."
+      },
+      "prequelToBookId": null,
+      "literaryIdentification": "A new romantic crime adventure featuring Popeye and Betty Boop."
+    },
+    {
+      "id": "my-blue-heaven",
+      "slug": "my-blue-heaven",
+      "title": "My Blue Heaven",
+      "subtitle": null,
+      "contributors": [
+        {
+          "authorId": "samara-bellingham",
+          "role": "author",
+          "creditedAs": "Samara Bellingham"
+        }
+      ],
+      "seriesMemberships": [
+        {
+          "seriesId": "sailor-showgirl",
+          "position": 2,
+          "displayLabel": "Book Two",
+          "chronologicalPosition": 1
+        }
+      ],
+      "genres": [
+        "Romance",
+        "Noir"
+      ],
+      "subgenres": [
+        "Screwball comedy",
+        "Jukebox musical"
+      ],
+      "publicationStatus": "published",
+      "description": {
+        "hook": "Betty can hold a room. Holding on to a sailor is another matter.",
+        "paragraphs": [
+          "At the Meridian, the Long Beach nightclub everybody calls Bluto’s, Betty Boop is finding out what her voice can earn her. There are musicians to impress, wages to negotiate, and a stage she wants to make her own.",
+          "Popeye has ships to catch. He also has questions about Olive Oyl, who vanished from his life without an explanation. Loving Betty cannot make those questions disappear, any more than loving him can settle what Betty wants from her work.",
+          "Songs pass between them. Letters travel too slowly. Homecomings bring pleasures and arguments neither could have managed at a distance.",
+          "A prequel to Twenty-Five Dollars a Night, My Blue Heaven returns to the earlier days of their relationship in a musical waterfront romance about desire, ambition, and the practical business of making room for another person without giving up your own life."
+        ],
+        "approval": {
+          "state": "draft",
+          "approvedBy": null,
+          "approvedOn": null,
+          "notes": "Ari editorial draft imported verbatim from delivered package; publisher approval pending. Publisher naming correction, 17 October 2026: Betty Bupinski and Pop-Eye supersede earlier website naming. Latest publisher instruction: use Betty Boop and Popeye directly in website copy; supersedes the earlier Bupinski/Pop-Eye preference."
+        },
+        "sourceIds": [
+          "ari-book-copy",
+          "ari-source-notes"
+        ]
+      },
+      "coverAssetId": "cover-my-blue-heaven",
+      "excerpt": {
+        "label": "Read an excerpt on Substack — Chapter Four",
+        "url": "https://publicdomainpulppress.substack.com/p/a-first-look-at-my-blue-heaven",
+        "kind": "excerpt",
+        "verification": "destination-verified",
+        "checkedOn": "2026-10-17",
+        "sourceIds": [
+          "mbh-excerpt"
+        ]
+      },
+      "playlist": {
+        "label": "Listen on Spotify",
+        "url": "https://open.spotify.com/playlist/6RCjxSxzDtJNpj5rmsroVg?si=nDw-JdmERdyT6k4qclE96A",
+        "kind": "playlist",
+        "verification": "source-linked",
+        "checkedOn": "2026-10-17",
+        "sourceIds": [
+          "mbh-manuscript",
+          "publisher-spotify-link"
+        ]
+      },
+      "chronologyNote": "My Blue Heaven is the prequel to Twenty-Five Dollars a Night. It is Book Two in the series publication order.",
+      "seo": {
+        "title": "My Blue Heaven by Samara Bellingham | Public Domain Pulp",
+        "description": "A screwball noir romance with music woven through the story. Explore My Blue Heaven by Samara Bellingham, Book Two of The Sailor & the Showgirl.",
+        "canonicalPath": "/books/my-blue-heaven/",
+        "socialImageAssetId": null,
+        "indexable": false
+      },
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Ari replacement description pending publisher approval. Direct publisher instruction establishes prequel relationship; edition metadata, cover and playlist/QR retained."
+      },
+      "sourceIds": [
+        "master-brief",
+        "claude-copy",
+        "kindle-mbh",
+        "paperback-mbh",
+        "mbh-manuscript",
+        "ari-book-copy",
+        "ari-source-notes"
+      ],
+      "playlistQrAssetId": "my-blue-heaven-playlist-qr",
+      "catalogTeaser": "Betty Boop is learning to command a stage. Popeye keeps going back to sea. Between songs, letters, and homecomings, they begin discovering what a life together might require.",
+      "rightsReview": {
+        "status": "pending",
+        "notes": "Character/source versions, territories, release timing and marketing presentation remain for publisher/legal review. Naming decisions are editorial permissions, not legal clearance."
+      },
+      "prequelToBookId": "twenty-five-dollars-a-night",
+      "literaryIdentification": "A new musical romance featuring Popeye and Betty Boop."
+    },
+    {
+      "id": "catalina",
+      "slug": "catalina",
+      "title": "Catalina",
+      "subtitle": null,
+      "contributors": [
+        {
+          "authorId": "samara-bellingham",
+          "role": "author",
+          "creditedAs": "Samara Bellingham"
+        }
+      ],
+      "seriesMemberships": [
+        {
+          "seriesId": "sailor-showgirl",
+          "position": 3,
+          "displayLabel": "Book Three",
+          "chronologicalPosition": 3
+        }
+      ],
+      "genres": [
+        "Romance"
+      ],
+      "subgenres": [
+        "Historical romantic comedy"
+      ],
+      "publicationStatus": "forthcoming",
+      "coverAssetId": "cover-catalina",
+      "excerpt": null,
+      "playlist": null,
+      "playlistQrAssetId": null,
+      "chronologyNote": null,
+      "seo": {
+        "title": "Catalina by Samara Bellingham | Public Domain Pulp",
+        "description": "With Bluto’s nightclub closed after a fire, Betty Boop and Popeye sail for Catalina with Mabel and a charming gentleman of leisure. Dancing, romance, and an unexpected clue complicate the holiday.",
+        "canonicalPath": "/books/catalina/",
+        "socialImageAssetId": null,
+        "indexable": false
+      },
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Website record remains a draft. Retailer status retained from earlier directly inspected Amazon listings; not inferred from the new prose."
+      },
+      "sourceIds": [
+        "master-brief",
+        "ari-book-copy",
+        "ari-source-notes"
+      ],
+      "catalogTeaser": "With Bluto’s nightclub closed after a fire, Betty Boop and Popeye sail for Catalina with Mabel and a charming gentleman of leisure. Dancing, romance, and an unexpected clue complicate the holiday.",
+      "description": {
+        "hook": "Betty has had enough of waiting for the nightclub to reopen. Catalina has a ballroom.",
+        "paragraphs": [
+          "That seems an excellent beginning.",
+          "With the Meridian still closed after a fire, Betty Boop and Mabel are out of work and thoroughly tired of discussing it. A sailing holiday promises sunshine, good food, and a change of company. Popeye knows his way across the water. Hamish Gravlin—Ham, or “Gravy” when Betty feels like it—has the boat, the manners, and a remarkable ability to avoid ordinary employment.",
+          "On the island, Mabel finds someone worth dancing with, Betty finds fresh possibilities for mischief, and the Casino offers more than an evening’s entertainment. Then a photograph gives the search for Olive Oyl an unexpected direction.",
+          "A romantic island adventure full of affectionate comedy, theatrical opportunity, and people discovering how much their pleasures—and their loyalties—may cost."
+        ],
+        "approval": {
+          "state": "draft",
+          "approvedBy": null,
+          "approvedOn": null,
+          "notes": "Ari editorial draft imported verbatim from delivered package; publisher approval pending. Publisher naming correction, 17 October 2026: Betty Bupinski and Pop-Eye supersede earlier website naming. Latest publisher instruction: use Betty Boop and Popeye directly in website copy; supersedes the earlier Bupinski/Pop-Eye preference."
+        },
+        "sourceIds": [
+          "ari-book-copy",
+          "ari-source-notes"
+        ]
+      },
+      "rightsReview": {
+        "status": "pending",
+        "notes": "Character/source versions, territories, release timing and marketing presentation remain for publisher/legal review. Naming decisions are editorial permissions, not legal clearance."
+      },
+      "prequelToBookId": null,
+      "literaryIdentification": "A new island romantic adventure featuring Popeye and Betty Boop."
+    },
+    {
+      "id": "tomorrow",
+      "slug": "tomorrow",
+      "title": "Tomorrow",
+      "subtitle": null,
+      "contributors": [
+        {
+          "authorId": "samara-bellingham",
+          "role": "author",
+          "creditedAs": "Samara Bellingham"
+        }
+      ],
+      "seriesMemberships": [
+        {
+          "seriesId": "jane-chronicles",
+          "position": 1,
+          "displayLabel": "Book One",
+          "chronologicalPosition": null
+        }
+      ],
+      "genres": [
+        "Romance"
+      ],
+      "subgenres": [
+        "Time-travel romance"
+      ],
+      "publicationStatus": "published",
+      "coverAssetId": "cover-tomorrow",
+      "excerpt": null,
+      "playlist": null,
+      "playlistQrAssetId": null,
+      "chronologyNote": null,
+      "seo": {
+        "title": "Tomorrow by Samara Bellingham | Public Domain Pulp",
+        "description": "Jane Porter chooses Africa. An impossible accident delivers her to Baltimore six centuries later, where Tarzan is remembered and her own future is still hers to invent.",
+        "canonicalPath": "/books/tomorrow/",
+        "socialImageAssetId": null,
+        "indexable": false
+      },
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Website record remains a draft. Retailer status retained from earlier directly inspected Amazon listings; not inferred from the new prose."
+      },
+      "sourceIds": [
+        "master-brief",
+        "ari-book-copy",
+        "ari-source-notes"
+      ],
+      "catalogTeaser": "Jane Porter chooses Africa. An impossible accident delivers her to Baltimore six centuries later, where Tarzan is remembered and her own future is still hers to invent.",
+      "description": {
+        "hook": "Jane Porter has decided to stay in Africa. Six centuries have other plans.",
+        "paragraphs": [
+          "In 1913, Jane is ready to build a life she has chosen for herself. She has loved Tarzan and left him. She has work she wants to do, languages to learn, and a father who will have to get used to her decision.",
+          "Then a violent anomaly tears her out of that life.",
+          "Jane wakes in a Baltimore transformed beyond recognition. Its technology can do things she scarcely knows how to ask for. Its records have already assigned her a place in history. And the people interested in her arrival have reasons of their own for helping her understand it.",
+          "There is work here, too. Friendship. The possibility of love. There may even be a way home.",
+          "But Jane has learned how easily a woman’s life can become part of somebody else’s plans. The future will have to make room for hers."
+        ],
+        "approval": {
+          "state": "draft",
+          "approvedBy": null,
+          "approvedOn": null,
+          "notes": "Ari editorial draft imported verbatim from delivered package; publisher approval pending."
+        },
+        "sourceIds": [
+          "ari-book-copy",
+          "ari-source-notes"
+        ]
+      },
+      "rightsReview": {
+        "status": "pending",
+        "notes": "Character/source versions, territories, release timing and marketing presentation remain for publisher/legal review. Naming decisions are editorial permissions, not legal clearance."
+      },
+      "prequelToBookId": null,
+      "literaryIdentification": "A speculative romantic adventure reimagining Jane Porter and the world of Edgar Rice Burroughs’s Tarzan stories."
+    },
+    {
+      "id": "the-man-from-africa",
+      "slug": "the-man-from-africa",
+      "title": "The Man from Africa",
+      "subtitle": null,
+      "contributors": [
+        {
+          "authorId": "samara-bellingham",
+          "role": "author",
+          "creditedAs": "Samara Bellingham"
+        }
+      ],
+      "seriesMemberships": [
+        {
+          "seriesId": "jane-chronicles",
+          "position": 2,
+          "displayLabel": "Book Two",
+          "chronologicalPosition": null
+        }
+      ],
+      "genres": [
+        "Romance"
+      ],
+      "subgenres": [
+        "Time-travel romance"
+      ],
+      "publicationStatus": "published",
+      "coverAssetId": "cover-the-man-from-africa",
+      "excerpt": null,
+      "playlist": null,
+      "playlistQrAssetId": null,
+      "chronologyNote": null,
+      "seo": {
+        "title": "The Man from Africa by Samara Bellingham | Public Domain Pulp",
+        "description": "Tarzan crosses six centuries to find Jane Porter. She has begun a life in the future—and reunion asks more of them than either expected.",
+        "canonicalPath": "/books/the-man-from-africa/",
+        "socialImageAssetId": null,
+        "indexable": false
+      },
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Website record remains a draft. Retailer status retained from earlier directly inspected Amazon listings; not inferred from the new prose."
+      },
+      "sourceIds": [
+        "master-brief",
+        "ari-book-copy",
+        "ari-source-notes"
+      ],
+      "catalogTeaser": "Tarzan crosses six centuries to find Jane Porter. She has begun a life in the future—and reunion asks more of them than either expected.",
+      "description": {
+        "hook": "Tarzan has found Jane. Finding their way back to each other will be harder.",
+        "paragraphs": [
+          "Jane Porter has made a place for herself in the twenty-sixth century. She has useful work, people who depend on her, and feelings for Rian Vale that cannot be dismissed because the man she loved in Africa has arrived.",
+          "Tarzan has crossed time deliberately. What he finds is a woman whose life has continued without him, in a city that already knows his name. Beyond Baltimore’s managed boundaries lies country he wants to understand—and dangers his old knowledge cannot always answer.",
+          "As Jane’s work takes her farther into that country, Tarzan’s example begins attracting attention of its own. People see a promise in him. Some hear only what they want to hear.",
+          "An intimate speculative adventure about reunion, competing loyalties, and the difficult discoveries that begin when love survives an impossible distance."
+        ],
+        "approval": {
+          "state": "draft",
+          "approvedBy": null,
+          "approvedOn": null,
+          "notes": "Ari editorial draft imported verbatim from delivered package; publisher approval pending."
+        },
+        "sourceIds": [
+          "ari-book-copy",
+          "ari-source-notes"
+        ]
+      },
+      "rightsReview": {
+        "status": "pending",
+        "notes": "Character/source versions, territories, release timing and marketing presentation remain for publisher/legal review. Naming decisions are editorial permissions, not legal clearance."
+      },
+      "prequelToBookId": null,
+      "literaryIdentification": "A speculative romantic adventure featuring new interpretations of Jane Porter and Tarzan."
+    },
+    {
+      "id": "a-wilder-tomorrow",
+      "slug": "a-wilder-tomorrow",
+      "title": "A Wilder Tomorrow",
+      "subtitle": null,
+      "contributors": [
+        {
+          "authorId": "samara-bellingham",
+          "role": "author",
+          "creditedAs": "Samara Bellingham"
+        }
+      ],
+      "seriesMemberships": [
+        {
+          "seriesId": "jane-chronicles",
+          "position": 3,
+          "displayLabel": "Book Three",
+          "chronologicalPosition": null
+        }
+      ],
+      "genres": [
+        "Romance"
+      ],
+      "subgenres": [
+        "Time-travel romance"
+      ],
+      "publicationStatus": "forthcoming",
+      "coverAssetId": "cover-a-wilder-tomorrow",
+      "excerpt": null,
+      "playlist": null,
+      "playlistQrAssetId": null,
+      "chronologyNote": null,
+      "seo": {
+        "title": "A Wilder Tomorrow by Samara Bellingham | Public Domain Pulp",
+        "description": "Settlements thrive where Baltimore’s maps say nobody lives. As Tarzan becomes a political symbol, Jane Porter faces a widening struggle over who gets to shape the future.",
+        "canonicalPath": "/books/a-wilder-tomorrow/",
+        "socialImageAssetId": null,
+        "indexable": false
+      },
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Website record remains a draft. Retailer status retained from earlier directly inspected Amazon listings; not inferred from the new prose."
+      },
+      "sourceIds": [
+        "master-brief",
+        "ari-book-copy",
+        "ari-source-notes"
+      ],
+      "catalogTeaser": "Settlements thrive where Baltimore’s maps say nobody lives. As Tarzan becomes a political symbol, Jane Porter faces a widening struggle over who gets to shape the future.",
+      "description": {
+        "hook": "The future has people its maps cannot account for. Jane Porter intends to meet them.",
+        "paragraphs": [
+          "Beyond Baltimore’s carefully managed districts, settlements are finding ways to live that the city never planned. Jane’s work brings her into contact with communities whose needs cannot be settled by changing their classification on a screen.",
+          "Inside the city, Tarzan’s growing influence is becoming something he never agreed to lead. His name travels farther than his explanations, and people with very different intentions are learning how useful it can be.",
+          "Jane has a child to prepare for, two extraordinary men in her life, and responsibilities that reach beyond either relationship. As political pressure grows, the freedom she has fought for must survive decisions with consequences for people far beyond herself.",
+          "The concluding volume of The Jane Chronicles carries Jane into a larger, more dangerous world—and asks what it takes to make a future she can live in."
+        ],
+        "approval": {
+          "state": "draft",
+          "approvedBy": null,
+          "approvedOn": null,
+          "notes": "Ari editorial draft imported verbatim from delivered package; publisher approval pending."
+        },
+        "sourceIds": [
+          "ari-book-copy",
+          "ari-source-notes"
+        ]
+      },
+      "rightsReview": {
+        "status": "pending",
+        "notes": "Character/source versions, territories, release timing and marketing presentation remain for publisher/legal review. Naming decisions are editorial permissions, not legal clearance."
+      },
+      "prequelToBookId": null,
+      "literaryIdentification": "A speculative romantic adventure continuing this reinterpretation of Jane Porter and Tarzan."
+    },
+    {
+      "id": "familiar-faces-dirty-business",
+      "slug": "familiar-faces-dirty-business",
+      "title": "Familiar Faces, Dirty Business",
+      "subtitle": null,
+      "contributors": [
+        {
+          "authorId": "wes-hamilton",
+          "role": "author",
+          "creditedAs": "Wes Hamilton"
+        }
+      ],
+      "seriesMemberships": [
+        {
+          "seriesId": "calder-city",
+          "position": 1,
+          "displayLabel": "Book One",
+          "chronologicalPosition": null
+        }
+      ],
+      "genres": [
+        "Crime",
+        "Noir"
+      ],
+      "subgenres": [
+        "Hard-boiled crime · Mystery"
+      ],
+      "publicationStatus": "forthcoming",
+      "coverAssetId": "cover-familiar-faces-dirty-business",
+      "excerpt": null,
+      "playlist": null,
+      "playlistQrAssetId": null,
+      "chronologyNote": null,
+      "seo": {
+        "title": "Familiar Faces, Dirty Business by Wes Hamilton | Public Domain Pulp",
+        "description": "Five hundred dollars to photograph an unfaithful husband takes Nancy Drew beyond gates she has always avoided—and into the private arrangements of Calder City’s powerful.",
+        "canonicalPath": "/books/familiar-faces-dirty-business/",
+        "socialImageAssetId": null,
+        "indexable": false
+      },
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Website record remains a draft. Retailer status retained from earlier directly inspected Amazon listings; not inferred from the new prose."
+      },
+      "sourceIds": [
+        "master-brief",
+        "ari-book-copy",
+        "ari-source-notes"
+      ],
+      "catalogTeaser": "Five hundred dollars to photograph an unfaithful husband takes Nancy Drew beyond gates she has always avoided—and into the private arrangements of Calder City’s powerful.",
+      "description": {
+        "hook": "Nancy Drew has turned back at the gates of Merriweather House three times. Five hundred dollars is a persuasive reason to try again.",
+        "paragraphs": [
+          "Her client wants photographs of an unfaithful husband. She supplies the time, the place, and directions precise enough to make Nancy wonder why anyone needs a detective at all.",
+          "Inside Merriweather’s circle, Blondie Bumstead knows the social arrangements—and how much people reveal to a woman they consider decorative. Elsewhere in Calder City, Dick Tracy and Kent Allard, the Shadow, pursue answers by methods unlikely to satisfy each other.",
+          "What begins as a well-paid intrusion into a marriage draws them toward the private dealings of people accustomed to deciding what the city gets to know.",
+          "Sex, money, sharp observation, and violence meet in an adult noir novel where recognizing the faces is only the beginning of understanding the company they keep."
+        ],
+        "approval": {
+          "state": "draft",
+          "approvedBy": null,
+          "approvedOn": null,
+          "notes": "Ari editorial draft imported verbatim from delivered package; publisher approval pending."
+        },
+        "sourceIds": [
+          "ari-book-copy",
+          "ari-source-notes"
+        ]
+      },
+      "rightsReview": {
+        "status": "pending",
+        "notes": "Character/source versions, territories, release timing and marketing presentation remain for publisher/legal review. Naming decisions are editorial permissions, not legal clearance."
+      },
+      "prequelToBookId": null,
+      "literaryIdentification": "A Calder City noir featuring new interpretations of Nancy Drew, Blondie Bumstead, Dick Tracy, and Kent Allard, the Shadow."
+    },
+    {
+      "id": "the-night-has-rules",
+      "slug": "the-night-has-rules",
+      "title": "The Night Has Rules",
+      "subtitle": null,
+      "contributors": [
+        {
+          "authorId": "wes-hamilton",
+          "role": "author",
+          "creditedAs": "Wes Hamilton"
+        }
+      ],
+      "seriesMemberships": [
+        {
+          "seriesId": "calder-city",
+          "position": 2,
+          "displayLabel": "Book Two",
+          "chronologicalPosition": null
+        }
+      ],
+      "genres": [
+        "Crime",
+        "Noir"
+      ],
+      "subgenres": [
+        "Noir · Crime"
+      ],
+      "publicationStatus": "forthcoming",
+      "coverAssetId": "cover-the-night-has-rules",
+      "excerpt": null,
+      "playlist": null,
+      "playlistQrAssetId": null,
+      "chronologyNote": null,
+      "seo": {
+        "title": "The Night Has Rules by Wes Hamilton | Public Domain Pulp",
+        "description": "Gangland killings put the Shadow’s name on Calder City’s lips. As Richard Wentworth, the Spider, enters the picture, Dick Tracy follows the evidence and Nancy Drew takes on a frightened client.",
+        "canonicalPath": "/books/the-night-has-rules/",
+        "socialImageAssetId": null,
+        "indexable": false
+      },
+      "approval": {
+        "state": "draft",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Website record remains a draft. Retailer status retained from earlier directly inspected Amazon listings; not inferred from the new prose."
+      },
+      "sourceIds": [
+        "master-brief",
+        "ari-book-copy",
+        "ari-source-notes"
+      ],
+      "catalogTeaser": "Gangland killings put the Shadow’s name on Calder City’s lips. As Richard Wentworth, the Spider, enters the picture, Dick Tracy follows the evidence and Nancy Drew takes on a frightened client.",
+      "description": {
+        "hook": "Three dead men. A city full of explanations. The Shadow has reason to distrust all of them.",
+        "paragraphs": [
+          "The killings barely interrupt Calder City’s business until the victims include a man whose death leaves too much money waiting to be collected. Then the rumors gather around Kent Allard’s other identity.",
+          "Dick Tracy has murder files to connect. Nancy Drew has a client who keeps changing hotels and withholding the name of the person she fears. Blondie Bumstead listens for the details a frightened woman has left out.",
+          "Richard Wentworth and Nita Van Sloan are doing their own work. As Wentworth’s methods bring the Spider into conflict with the Shadow, the question of who is killing criminals becomes inseparable from what either man believes he is entitled to do.",
+          "A noir crime novel of parallel investigations, dangerous certainty, and the people caught between men who believe they can put a city right."
+        ],
+        "approval": {
+          "state": "draft",
+          "approvedBy": null,
+          "approvedOn": null,
+          "notes": "Ari editorial draft imported verbatim from delivered package; publisher approval pending."
+        },
+        "sourceIds": [
+          "ari-book-copy",
+          "ari-source-notes"
+        ]
+      },
+      "rightsReview": {
+        "status": "pending",
+        "notes": "Character/source versions, territories, release timing and marketing presentation remain for publisher/legal review. Naming decisions are editorial permissions, not legal clearance."
+      },
+      "prequelToBookId": null,
+      "literaryIdentification": "A Calder City noir featuring new interpretations of the Shadow, the Spider, Dick Tracy, Nancy Drew, and Blondie Bumstead."
+    }
+  ],
+  "editions": [
+    {
+      "id": "my-blue-heaven-kindle",
+      "bookId": "my-blue-heaven",
+      "format": "kindle",
+      "language": "en",
+      "publicationStatus": "available",
+      "publicationDate": "2026-10-15",
+      "retailerPublisherCredit": null,
+      "isbn13": null,
+      "asin": "B0HLN6C27N",
+      "pageCount": 307,
+      "links": [
+        {
+          "label": "Kindle on Amazon",
+          "url": "https://www.amazon.com/dp/B0HLN6C27N",
+          "kind": "retailer",
+          "verification": "destination-verified",
+          "checkedOn": "2026-10-17",
+          "sourceIds": [
+            "kindle-mbh"
+          ]
+        }
+      ],
+      "approval": {
+        "state": "fact-checked",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Edition metadata and destination checked directly in browser on 17 October 2026. Recheck before launch."
+      },
+      "sourceIds": [
+        "kindle-mbh"
+      ]
+    },
+    {
+      "id": "my-blue-heaven-paperback",
+      "bookId": "my-blue-heaven",
+      "format": "paperback",
+      "language": "en",
+      "publicationStatus": "available",
+      "publicationDate": "2026-10-15",
+      "retailerPublisherCredit": "Independently published",
+      "isbn13": "9798160818450",
+      "asin": "B0HMFVZWCN",
+      "pageCount": 260,
+      "links": [
+        {
+          "label": "Paperback on Amazon",
+          "url": "https://www.amazon.com/dp/B0HMFVZWCN",
+          "kind": "retailer",
+          "verification": "destination-verified",
+          "checkedOn": "2026-10-17",
+          "sourceIds": [
+            "paperback-mbh"
+          ]
+        }
+      ],
+      "approval": {
+        "state": "fact-checked",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Edition metadata and destination checked directly in browser on 17 October 2026. Recheck before launch."
+      },
+      "sourceIds": [
+        "paperback-mbh"
+      ]
+    },
+    {
+      "id": "twenty-five-dollars-a-night-kindle",
+      "bookId": "twenty-five-dollars-a-night",
+      "format": "kindle",
+      "language": "en",
+      "publicationStatus": "available",
+      "publicationDate": null,
+      "retailerPublisherCredit": null,
+      "isbn13": null,
+      "asin": "B0HJ9VW48L",
+      "pageCount": null,
+      "links": [
+        {
+          "label": "Kindle on Amazon",
+          "url": "https://www.amazon.com/dp/B0HJ9VW48L",
+          "kind": "retailer",
+          "verification": "destination-verified",
+          "checkedOn": "2026-10-17",
+          "sourceIds": [
+            "retailer-twenty-five-dollars-a-night-kindle"
+          ]
+        }
+      ],
+      "approval": {
+        "state": "fact-checked",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Previously checked retailer link/status retained; no new publication date, price or ISBN inferred."
+      },
+      "sourceIds": [
+        "retailer-twenty-five-dollars-a-night-kindle"
+      ]
+    },
+    {
+      "id": "catalina-kindle",
+      "bookId": "catalina",
+      "format": "kindle",
+      "language": "en",
+      "publicationStatus": "preorder",
+      "publicationDate": null,
+      "retailerPublisherCredit": null,
+      "isbn13": null,
+      "asin": "B0HMMBC8WV",
+      "pageCount": null,
+      "links": [
+        {
+          "label": "Preorder Kindle on Amazon",
+          "url": "https://www.amazon.com/dp/B0HMMBC8WV",
+          "kind": "retailer",
+          "verification": "destination-verified",
+          "checkedOn": "2026-10-17",
+          "sourceIds": [
+            "retailer-catalina-kindle"
+          ]
+        }
+      ],
+      "approval": {
+        "state": "fact-checked",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Previously checked retailer link/status retained; no new publication date, price or ISBN inferred."
+      },
+      "sourceIds": [
+        "retailer-catalina-kindle"
+      ]
+    },
+    {
+      "id": "tomorrow-kindle",
+      "bookId": "tomorrow",
+      "format": "kindle",
+      "language": "en",
+      "publicationStatus": "available",
+      "publicationDate": null,
+      "retailerPublisherCredit": null,
+      "isbn13": null,
+      "asin": "B0HJF1L9VB",
+      "pageCount": null,
+      "links": [
+        {
+          "label": "Kindle on Amazon",
+          "url": "https://www.amazon.com/dp/B0HJF1L9VB",
+          "kind": "retailer",
+          "verification": "destination-verified",
+          "checkedOn": "2026-10-17",
+          "sourceIds": [
+            "retailer-tomorrow-kindle"
+          ]
+        }
+      ],
+      "approval": {
+        "state": "fact-checked",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Previously checked retailer link/status retained; no new publication date, price or ISBN inferred."
+      },
+      "sourceIds": [
+        "retailer-tomorrow-kindle"
+      ]
+    },
+    {
+      "id": "the-man-from-africa-kindle",
+      "bookId": "the-man-from-africa",
+      "format": "kindle",
+      "language": "en",
+      "publicationStatus": "available",
+      "publicationDate": null,
+      "retailerPublisherCredit": null,
+      "isbn13": null,
+      "asin": "B0HJ6NQF2Q",
+      "pageCount": null,
+      "links": [
+        {
+          "label": "Kindle on Amazon",
+          "url": "https://www.amazon.com/dp/B0HJ6NQF2Q",
+          "kind": "retailer",
+          "verification": "destination-verified",
+          "checkedOn": "2026-10-17",
+          "sourceIds": [
+            "retailer-the-man-from-africa-kindle"
+          ]
+        }
+      ],
+      "approval": {
+        "state": "fact-checked",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Previously checked retailer link/status retained; no new publication date, price or ISBN inferred."
+      },
+      "sourceIds": [
+        "retailer-the-man-from-africa-kindle"
+      ]
+    },
+    {
+      "id": "a-wilder-tomorrow-kindle",
+      "bookId": "a-wilder-tomorrow",
+      "format": "kindle",
+      "language": "en",
+      "publicationStatus": "preorder",
+      "publicationDate": null,
+      "retailerPublisherCredit": null,
+      "isbn13": null,
+      "asin": "B0HJ6TCRN7",
+      "pageCount": null,
+      "links": [
+        {
+          "label": "Preorder Kindle on Amazon",
+          "url": "https://www.amazon.com/dp/B0HJ6TCRN7",
+          "kind": "retailer",
+          "verification": "destination-verified",
+          "checkedOn": "2026-10-17",
+          "sourceIds": [
+            "retailer-a-wilder-tomorrow-kindle"
+          ]
+        }
+      ],
+      "approval": {
+        "state": "fact-checked",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Previously checked retailer link/status retained; no new publication date, price or ISBN inferred."
+      },
+      "sourceIds": [
+        "retailer-a-wilder-tomorrow-kindle"
+      ]
+    },
+    {
+      "id": "familiar-faces-dirty-business-kindle",
+      "bookId": "familiar-faces-dirty-business",
+      "format": "kindle",
+      "language": "en",
+      "publicationStatus": "preorder",
+      "publicationDate": null,
+      "retailerPublisherCredit": null,
+      "isbn13": null,
+      "asin": "B0HJX1FYG5",
+      "pageCount": null,
+      "links": [
+        {
+          "label": "Preorder Kindle on Amazon",
+          "url": "https://www.amazon.com/dp/B0HJX1FYG5",
+          "kind": "retailer",
+          "verification": "destination-verified",
+          "checkedOn": "2026-10-17",
+          "sourceIds": [
+            "retailer-familiar-faces-dirty-business-kindle"
+          ]
+        }
+      ],
+      "approval": {
+        "state": "fact-checked",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Previously checked retailer link/status retained; no new publication date, price or ISBN inferred."
+      },
+      "sourceIds": [
+        "retailer-familiar-faces-dirty-business-kindle"
+      ]
+    },
+    {
+      "id": "the-night-has-rules-kindle",
+      "bookId": "the-night-has-rules",
+      "format": "kindle",
+      "language": "en",
+      "publicationStatus": "preorder",
+      "publicationDate": null,
+      "retailerPublisherCredit": null,
+      "isbn13": null,
+      "asin": "B0HLWQX1NS",
+      "pageCount": null,
+      "links": [
+        {
+          "label": "Preorder Kindle on Amazon",
+          "url": "https://www.amazon.com/dp/B0HLWQX1NS",
+          "kind": "retailer",
+          "verification": "destination-verified",
+          "checkedOn": "2026-10-17",
+          "sourceIds": [
+            "retailer-the-night-has-rules-kindle"
+          ]
+        }
+      ],
+      "approval": {
+        "state": "fact-checked",
+        "approvedBy": null,
+        "approvedOn": null,
+        "notes": "Previously checked retailer link/status retained; no new publication date, price or ISBN inferred."
+      },
+      "sourceIds": [
+        "retailer-the-night-has-rules-kindle"
+      ]
+    }
+  ]
+}

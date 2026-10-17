@@ -1,0 +1,78 @@
+{
+  "id": "familiar-faces-dirty-business",
+  "slug": "familiar-faces-dirty-business",
+  "title": "Familiar Faces, Dirty Business",
+  "subtitle": null,
+  "contributors": [
+    {
+      "authorId": "wes-hamilton",
+      "role": "author",
+      "creditedAs": "Wes Hamilton"
+    }
+  ],
+  "seriesMemberships": [
+    {
+      "seriesId": "calder-city",
+      "position": 1,
+      "displayLabel": "Book One",
+      "chronologicalPosition": null
+    }
+  ],
+  "genres": [
+    "Crime",
+    "Noir"
+  ],
+  "subgenres": [
+    "Hard-boiled crime · Mystery"
+  ],
+  "publicationStatus": "forthcoming",
+  "coverAssetId": "cover-familiar-faces-dirty-business",
+  "excerpt": null,
+  "playlist": null,
+  "playlistQrAssetId": null,
+  "chronologyNote": null,
+  "seo": {
+    "title": "Familiar Faces, Dirty Business by Wes Hamilton | Public Domain Pulp",
+    "description": "Five hundred dollars to photograph an unfaithful husband takes Nancy Drew beyond gates she has always avoided—and into the private arrangements of Calder City’s powerful.",
+    "canonicalPath": "/books/familiar-faces-dirty-business/",
+    "socialImageAssetId": null,
+    "indexable": false
+  },
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Website record remains a draft. Retailer status retained from earlier directly inspected Amazon listings; not inferred from the new prose."
+  },
+  "sourceIds": [
+    "master-brief",
+    "ari-book-copy",
+    "ari-source-notes"
+  ],
+  "catalogTeaser": "Five hundred dollars to photograph an unfaithful husband takes Nancy Drew beyond gates she has always avoided—and into the private arrangements of Calder City’s powerful.",
+  "description": {
+    "hook": "Nancy Drew has turned back at the gates of Merriweather House three times. Five hundred dollars is a persuasive reason to try again.",
+    "paragraphs": [
+      "Her client wants photographs of an unfaithful husband. She supplies the time, the place, and directions precise enough to make Nancy wonder why anyone needs a detective at all.",
+      "Inside Merriweather’s circle, Blondie Bumstead knows the social arrangements—and how much people reveal to a woman they consider decorative. Elsewhere in Calder City, Dick Tracy and Kent Allard, the Shadow, pursue answers by methods unlikely to satisfy each other.",
+      "What begins as a well-paid intrusion into a marriage draws them toward the private dealings of people accustomed to deciding what the city gets to know.",
+      "Sex, money, sharp observation, and violence meet in an adult noir novel where recognizing the faces is only the beginning of understanding the company they keep."
+    ],
+    "approval": {
+      "state": "draft",
+      "approvedBy": null,
+      "approvedOn": null,
+      "notes": "Ari editorial draft imported verbatim from delivered package; publisher approval pending."
+    },
+    "sourceIds": [
+      "ari-book-copy",
+      "ari-source-notes"
+    ]
+  },
+  "rightsReview": {
+    "status": "pending",
+    "notes": "Character/source versions, territories, release timing and marketing presentation remain for publisher/legal review. Naming decisions are editorial permissions, not legal clearance."
+  },
+  "prequelToBookId": null,
+  "literaryIdentification": "A Calder City noir featuring new interpretations of Nancy Drew, Blondie Bumstead, Dick Tracy, and Kent Allard, the Shadow."
+}

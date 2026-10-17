@@ -1,0 +1,33 @@
+{
+  "id": "jane-chronicles",
+  "name": "The Jane Chronicles",
+  "aliases": [
+    "The Jane Porter Chronicles"
+  ],
+  "slug": "the-jane-chronicles",
+  "publishingLineId": null,
+  "description": "Jane Porter chooses a life in Africa. An accident carries her six centuries into the future, to a Baltimore that remembers Tarzan far better than it remembers her. Across three novels, Jane finds work, desire, friendship, and a world whose promises of safety come with difficult conditions. As the past follows her and the country beyond the city opens, she must decide what she wants to build—and who gets a say in the life she calls her own.",
+  "genreLabels": [
+    "Speculative romance"
+  ],
+  "recommendedStartingBookId": null,
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Ari series introduction imported verbatim; publisher approval pending. Series position does not prescribe a starting-point recommendation."
+  },
+  "sourceIds": [
+    "publisher-direction",
+    "claude-copy",
+    "ari-book-copy",
+    "ari-source-notes"
+  ],
+  "publicationOrder": [
+    "tomorrow",
+    "the-man-from-africa",
+    "a-wilder-tomorrow"
+  ],
+  "storyChronology": [],
+  "visualTheme": "forest"
+}

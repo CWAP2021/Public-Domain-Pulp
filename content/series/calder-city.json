@@ -1,0 +1,31 @@
+{
+  "id": "calder-city",
+  "name": "Calder City",
+  "aliases": [],
+  "slug": "calder-city",
+  "publishingLineId": null,
+  "description": "Nancy Drew earns her living asking questions. Blondie Bumstead knows how to make people answer without noticing. Dick Tracy needs evidence he can use. Kent Allard, the Shadow, works by other rules. In Calder City, their investigations cross private bedrooms, expensive hotels, police offices, and the waterfront, where respectable business and criminal power share more than an address. These are adult noir novels about money, appetite, violence, and the price of finding out.",
+  "genreLabels": [
+    "Crime",
+    "Noir"
+  ],
+  "recommendedStartingBookId": null,
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Ari series introduction imported verbatim; publisher approval pending. Series position does not prescribe a starting-point recommendation."
+  },
+  "sourceIds": [
+    "publisher-direction",
+    "claude-copy",
+    "ari-book-copy",
+    "ari-source-notes"
+  ],
+  "publicationOrder": [
+    "familiar-faces-dirty-business",
+    "the-night-has-rules"
+  ],
+  "storyChronology": [],
+  "visualTheme": "navy"
+}

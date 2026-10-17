@@ -1,0 +1,9 @@
+---
+import {seriesFor,statusLabel,type Book} from '../data/catalog';
+const {book,priority=false}=Astro.props as {book:Book,priority?:boolean};
+---
+<article class="book-card">
+ <a class="cover-link" href={`/books/${book.slug}/`} aria-label={`Explore ${book.title}`}><img src={book.cover!} alt="" width={book.coverWidth} height={book.coverHeight} loading={priority?'eager':'lazy'} decoding="async"/></a>
+ <div class="book-meta"><span class:list={['status',book.status]}>{statusLabel(book.status)}</span><span>{seriesFor(book.seriesId).name} · {book.order}</span></div>
+ <h3><a href={`/books/${book.slug}/`}>{book.title}</a></h3><p class="byline">{book.author}</p><p class="card-hook">{book.catalogTeaser}</p>
+</article>

@@ -1,0 +1,4 @@
+---
+import Layout from '../layouts/Layout.astro';import JournalList from '../components/JournalList.astro';import Newsletter from '../components/Newsletter.astro';import {site} from '../data/catalog';
+---
+<Layout title="Journal" description="Book excerpts and essays on adaptation, genre, public-domain characters, and AI-assisted creative work from Public Domain Pulp."><header class="page-intro wrap"><p class="eyebrow">The Public Domain Pulp Journal</p><h1>Between the books.<br/><em>Behind the stories.</em></h1><p>Excerpts, new fiction, and essays on adaptation, genre, and the characters who keep finding new readers.</p></header><section class="section wrap"><JournalList/><p style="margin-top:35px"><a class="text-link" href={site.newsletter}>Visit Public Domain Pulp on Substack ↗</a></p></section><Newsletter embedded/></Layout>

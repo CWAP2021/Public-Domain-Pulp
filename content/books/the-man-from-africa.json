@@ -1,0 +1,77 @@
+{
+  "id": "the-man-from-africa",
+  "slug": "the-man-from-africa",
+  "title": "The Man from Africa",
+  "subtitle": null,
+  "contributors": [
+    {
+      "authorId": "samara-bellingham",
+      "role": "author",
+      "creditedAs": "Samara Bellingham"
+    }
+  ],
+  "seriesMemberships": [
+    {
+      "seriesId": "jane-chronicles",
+      "position": 2,
+      "displayLabel": "Book Two",
+      "chronologicalPosition": null
+    }
+  ],
+  "genres": [
+    "Romance"
+  ],
+  "subgenres": [
+    "Time-travel romance"
+  ],
+  "publicationStatus": "published",
+  "coverAssetId": "cover-the-man-from-africa",
+  "excerpt": null,
+  "playlist": null,
+  "playlistQrAssetId": null,
+  "chronologyNote": null,
+  "seo": {
+    "title": "The Man from Africa by Samara Bellingham | Public Domain Pulp",
+    "description": "Tarzan crosses six centuries to find Jane Porter. She has begun a life in the future—and reunion asks more of them than either expected.",
+    "canonicalPath": "/books/the-man-from-africa/",
+    "socialImageAssetId": null,
+    "indexable": false
+  },
+  "approval": {
+    "state": "draft",
+    "approvedBy": null,
+    "approvedOn": null,
+    "notes": "Website record remains a draft. Retailer status retained from earlier directly inspected Amazon listings; not inferred from the new prose."
+  },
+  "sourceIds": [
+    "master-brief",
+    "ari-book-copy",
+    "ari-source-notes"
+  ],
+  "catalogTeaser": "Tarzan crosses six centuries to find Jane Porter. She has begun a life in the future—and reunion asks more of them than either expected.",
+  "description": {
+    "hook": "Tarzan has found Jane. Finding their way back to each other will be harder.",
+    "paragraphs": [
+      "Jane Porter has made a place for herself in the twenty-sixth century. She has useful work, people who depend on her, and feelings for Rian Vale that cannot be dismissed because the man she loved in Africa has arrived.",
+      "Tarzan has crossed time deliberately. What he finds is a woman whose life has continued without him, in a city that already knows his name. Beyond Baltimore’s managed boundaries lies country he wants to understand—and dangers his old knowledge cannot always answer.",
+      "As Jane’s work takes her farther into that country, Tarzan’s example begins attracting attention of its own. People see a promise in him. Some hear only what they want to hear.",
+      "An intimate speculative adventure about reunion, competing loyalties, and the difficult discoveries that begin when love survives an impossible distance."
+    ],
+    "approval": {
+      "state": "draft",
+      "approvedBy": null,
+      "approvedOn": null,
+      "notes": "Ari editorial draft imported verbatim from delivered package; publisher approval pending."
+    },
+    "sourceIds": [
+      "ari-book-copy",
+      "ari-source-notes"
+    ]
+  },
+  "rightsReview": {
+    "status": "pending",
+    "notes": "Character/source versions, territories, release timing and marketing presentation remain for publisher/legal review. Naming decisions are editorial permissions, not legal clearance."
+  },
+  "prequelToBookId": null,
+  "literaryIdentification": "A speculative romantic adventure featuring new interpretations of Jane Porter and Tarzan."
+}
